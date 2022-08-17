@@ -1,7 +1,51 @@
 *,*::before,*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   }
+  html{
+    font-family: 'Lato', sans-serif;
+  }
+  :root{
+    --black: black;
+    --wine: #730D15;
+    --red: #f20519;
+    --gray: gray;
+    --gray2: #262626;
+    --white: #f4f5f0;
+    }
+
+/*This is form 0 px to 760 px */
+
+.navbar{
+    display: flex;
+    height: 48px;
+    background-color: var(--gray2);
+    border-bottom: 3px solid var(--red);
+    color: var(--white);
+}
+.logo{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+#burguer-menu{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 5%;
+}
+#logo-dat{
+    font-size: 5px;
+    padding: 0;
+    margin: 0;
+    color: var(--red);
+    height: 1rem;
+    display: flex;
+    align-items: flex-end;
+
+}
