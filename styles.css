@@ -82,7 +82,7 @@ header{
   margin-top: 12px;
 }
 .welcome-section p{
-  font-size 1rem;
+  font-size: 1rem;
   font-weight: 400px;
   width: 85%;
   line-height: 1.5rem;
@@ -112,5 +112,4 @@ header{
   width: 160px;
   max-width: 100%;
 }
-
 
