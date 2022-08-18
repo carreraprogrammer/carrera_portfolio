@@ -48,6 +48,10 @@
   display: flex;
   align-items: flex-end;
 }
+header{
+  height: 100vh;
+  background-color: var(--black);
+}
 .welcome-section{
   display: flex;
   flex-direction: column;
@@ -98,75 +102,15 @@
   cursor: pointer;
   text-shadow: 0 0 3px var(--red);
 }
+.illustration-header-mobile{
+  display: flex;
+  position: absolute;
+  left: 60%;
+  top: 45%;
+}
 .vectors{
-  
-}
-.vector_1{
-  position: absolute;
-  top: 60%;
-  left: 97%;
-}
-.vector_2{
-  position: absolute;
-  left: 80%;
-  z-index: 2;
-}
-.vector_3{
-  position: absolute;
-  left: 80%;
-  top: 80%;
-  z-index: 1;
-}
-.vector_4{
-  position: absolute;
-  left: 82%;
-  top:75%;
-  z-index: 4;
-}
-.vector_5{
-  position: absolute;
-  left: 82%;
-  top:77%;
-  z-index: 3;
-}
-.vector_6{
-  position: absolute;
-  left: 83%;
-  top:81%;
-  z-index: 5;
-}
-.vector_7{
-  position: absolute;
-  z-index: 5;
-  left: 90%;
-  top: 87%;
-}
-.vector_8{
-  position: absolute;
-  z-index: 0;
-  left: 87%;
-  top: 80%;
-}
-.vector_9{
-  position: absolute;
-  top: 97%;
-  left: 89%;
-}
-.vector_10{
-  position: absolute;
-  top: 96%;
-  left: 94%;
-}
-.vector_11{
-  position: absolute;
-  top: 93%;
-  left:97%
-}
-.vector_12{
-  position: absolute;
-  top: 97%;
-  left: 97%;
+  width: 160px;
+  max-width: 100%;
 }
 
 
-  
