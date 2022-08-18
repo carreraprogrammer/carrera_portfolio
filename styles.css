@@ -38,6 +38,12 @@ html {
   margin-left: 5%;
 }
 
+.logo-link{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 #burguer-menu {
   flex: 1;
   display: flex;
