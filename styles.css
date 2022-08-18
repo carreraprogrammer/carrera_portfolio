@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html {
+  font-family: 'Lato', sans-serif;
+}
+
+:root {
+  --black: black;
+  --wine: #730d15;
+  --red: #f20519;
+  --gray: gray;
+  --gray2: #262626;
+  --white: #f4f5f0;
+}
+
+/* This is form 0 px to 760 px */
+
+.navbar {
+  display: flex;
+  height: 48px;
+  background-color: var(--gray2);
+  border-bottom: 3px solid var(--red);
+  color: var(--white);
+}
+
+.logo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+}
+
+.logo-link {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#burguer-menu {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-right: 5%;
+}
+
+#logo-dat {
+  font-size: 5px;
+  padding: 0;
+  margin: 0;
+  color: var(--red);
+  height: 1rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+header {
+  height: 100vh;
+  background-color: var(--black);
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.welcome-section h1 {
+  font-size: 3.5rem;
+  line-height: 4rem;
+  text-align: left;
+  font-weight: 700px;
+  word-spacing: 0.35px;
+  width: 85%;
+  color: var(--white);
+  text-shadow: 0 0 10px var(--red);
+}
+
+.welcome-section h1 span {
+  color: var(--red);
+}
+
+.welcome-section h2 {
+  font-size: 1.5rem;
+  width: 85%;
+  text-align: left;
+  font-style: bold;
+  margin-top: 12px;
+}
+
+.welcome-section p {
+  font-size: 1rem;
+  font-weight: 400px;
+  width: 85%;
+  line-height: 1.5rem;
+  margin-top: 12px;
+  word-spacing: 1px;
+}
+
+.social-icons {
+  display: flex;
+  font-size: 20px;
+  width: 85%;
+  margin-top: 20px;
+}
+
+.social-icons li {
+  list-style: none;
+}
+
+.social-icons i {
+  margin-right: 15px;
+  margin-left: 5px;
+  color: var(--gray);
+  cursor: pointer;
+  text-shadow: 0 0 3px var(--red);
+}
+
+.illustration-header-mobile {
+  display: flex;
+  position: absolute;
+  left: 60%;
+  top: 45%;
+}
+
+.vectors {
+  width: 160px;
+  max-width: 100%;
+}
