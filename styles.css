@@ -38,7 +38,7 @@ html {
   margin-left: 5%;
 }
 
-.logo-link{
+.logo-link {
   height: 100%;
   display: flex;
   align-items: center;
@@ -114,6 +114,10 @@ header {
   font-size: 20px;
   width: 85%;
   margin-top: 20px;
+}
+
+.social-icons li {
+  list-style: none;
 }
 
 .social-icons i {
