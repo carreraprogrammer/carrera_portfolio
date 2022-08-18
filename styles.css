@@ -64,6 +64,8 @@
   font-weight: 700px;
   word-spacing: 0.35px;
   width: 85%;
+  color: var(--white);
+  text-shadow: 0 0 10px var(--red);
 }
 .welcome-section h1 span{
   color: var(--red);
@@ -81,6 +83,7 @@
     width: 85%;
     line-height: 1.5rem;
     margin-top: 12px;
+    word-spacing: 1px;
 }
 .social-icons{
     display: flex;
@@ -91,4 +94,7 @@
 .social-icons i{
     margin-right: 15px;
     margin-left: 5px;
+    color: var(--gray);
+    cursor: pointer;
+    text-shadow: 0 0 3px var(--red);
 }
