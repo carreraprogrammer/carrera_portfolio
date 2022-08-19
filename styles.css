@@ -266,13 +266,16 @@ main hr {
   width: 100%;
 }
 
-.see-more-btn {
-  width: 90%;
+.see-more-container {
   display: flex;
+  width: 90%;
   justify-content: left;
 }
 
-.see-more-btn input {
+.see-more-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 124px;
   height: 48px;
   color: var(--white);
