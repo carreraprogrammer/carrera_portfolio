@@ -398,27 +398,6 @@ main hr {
   margin-top: 24px;
 }
 
-.get-resume-link {
-  width: 90%;
-}
-
-.get-resume-link input {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px;
-  gap: 10px;
-  width: 161px;
-  height: 48px;
-  background-color: var(--red);
-  border: none;
-  color: var(--white);
-  margin-top: 24px;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-}
-
 .illustration-about {
   width: 40%;
   position: relative;
