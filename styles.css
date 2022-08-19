@@ -228,6 +228,30 @@ main hr {
   margin-top: 24px;
 }
 
+.works-title-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.works-divider {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid var(--black);
+  background-color: black;
+}
+
+.works-title {
+  justify-content: center;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+}
+
 .daily-selection article h3 {
   padding-bottom: 12px;
   font-style: normal;
