@@ -21,6 +21,10 @@ html {
   --white: #f4f5f0;
 }
 
+body {
+  display: block;
+}
+
 /* This is form 0 px to 760 px */
 
 .navbar {
@@ -72,8 +76,8 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 95vh;
-  background-color: var(--black);
+  height: 90vh;
+  
   color: var(--white);
 }
 
@@ -139,3 +143,127 @@ header {
   width: 160px;
   max-width: 100%;
 }
+
+
+.works {
+  padding-top: 120px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+main h2 {
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 52px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  order: 0;
+}
+
+main hr {
+  width: 327px;
+  border: 1px solid 
+  #212121;
+  margin-top: 24px;
+  order: 1;
+}
+
+.daily-selection {
+  height: 568px;
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-placeholder { 
+  background-color: var(--red);
+  width: 90%;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid var(--wine)
+}
+
+.img-placeholder a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+ }
+
+.img-placeholder img {
+  max-width: 85%;
+  height: 85%; 
+}
+
+.daily-selection article {
+  width: 90%;
+  margin-top: 24px;
+}
+
+.daily-selection article h3 {
+  padding-bottom: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.daily-selection p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.tags {
+  display: flex;
+  width: 90%;
+  height: 40px;
+  margin-top: 12px;
+  align-items: center;
+  gap: 20px;
+}
+
+.tags p{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  padding-right: 12px;
+  padding-left: 12px;
+  border: 1px solid var(--red);
+}
+
+.see-more-btn{
+  width: 90%;
+  display: flex;
+  justify-content: left;
+}
+
+.see-more-btn input {
+  width: 124px;
+  height: 48px;
+  color: var(--white);
+  background-color: var(--red);
+  border: none;
+  margin-top: 12px;
+}
+
+.projects-grid{
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.projects-grid div{
+  background-color: var(--black);
+  height: 386px;
+}
+
