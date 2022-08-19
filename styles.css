@@ -465,7 +465,7 @@ main hr {
   order: 2;
 }
 
-.about-me ul h3 {
+.about-me ul p {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -481,7 +481,7 @@ main hr {
   padding-bottom: 32px;
 }
 
-.about-me ul h3 i {
+.about-me ul p i {
   font-size: 18px;
   margin-right: 12px;
   padding-top: 14px;
