@@ -9,13 +9,13 @@
 }
 
 html {
-  font-family: 'Crete Round', serif; 
+  font-family: 'Crete Round', serif;
 }
 
 :root {
-  --black: #1C1A19;
+  --black: #1c1a19;
   --wine: #730d15;
-  --red: #FF6B00;
+  --red: #ff6b00;
   --gray: gray;
   --gray2: #262626;
   --white: #f4f5f0;
@@ -116,7 +116,6 @@ header {
 
 .welcome-section h2 {
   width: 85%;
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -128,11 +127,10 @@ header {
   font-size: 16px;
   font-weight: 400;
   width: 85%;
-  color:#ffffff;
+  color: #fff;
   line-height: 24px;
   word-spacing: 1px;
   z-index: 1;
-  font-family: 'Poppins';
   font-style: normal;
   margin-top: 12px;
 }
@@ -153,7 +151,7 @@ header {
 .social-icons i {
   margin-right: 15px;
   margin-left: 5px;
-  color:  #DBD8D7;
+  color: #dbd8d7;
   cursor: pointer;
 }
 
@@ -282,7 +280,7 @@ main hr {
   padding-left: 12px;
   padding-bottom: 10px;
   padding-top: 10px;
-  border: 1px solid #8993A4;
+  border: 1px solid #8993a4;
 }
 
 .see-more-container {
@@ -382,7 +380,7 @@ main hr {
 }
 
 .about-me {
-  background-color: #1C1A19;
+  background-color: #1c1a19;
   color: var(--white);
   display: flex;
   flex-direction: column;
