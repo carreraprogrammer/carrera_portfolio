@@ -25,7 +25,7 @@ body {
   display: block;
 }
 
-* p{
+* p {
   word-spacing: 4px;
 }
 
@@ -35,19 +35,20 @@ body {
   background-color: rgb(245, 216, 200);
 }
 
-* .btn:active{
-  background-color:rgb(200, 5, 25);
+* .btn:active {
+  background-color: rgb(200, 5, 25);
   color: var(--white);
 }
 
-* .btn:disabled{
-  background-color: #F4F1F0;
-  color:  #5B5957;
+* .btn:disabled {
+  background-color: #f4f1f0;
+  color: #5b5957;
 }
 
 * a {
   text-decoration: none;
 }
+
 /* This is form 0 px to 760 px */
 
 .navbar {
@@ -98,7 +99,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end; 
   height: 100%;
   color: var(--white);
   justify-content: center;
@@ -169,11 +169,9 @@ header {
 .vectors {
   width: 55%;
   position: relative;
-  margin-top:-25%;
+  margin-top: -25%;
   height: 125%;
- 
 }
-
 
 .works {
   padding-top: 120px;
@@ -183,7 +181,7 @@ header {
   width: 100%;
 }
 
-main h2 {
+.welcome-section h2 {
   font-size: 2.5rem;
   font-style: normal;
   font-weight: 400;
@@ -195,8 +193,7 @@ main h2 {
 
 main hr {
   width: 327px;
-  border: 1px solid 
-  #212121;
+  border: 1px solid #212121;
   margin-top: 24px;
   order: 1;
 }
@@ -270,9 +267,11 @@ main hr {
   padding-left: 12px;
   border: 1px solid var(--red);
 }
+
 .link-card-button {
   width: 100%;
 }
+
 .see-more-btn {
   width: 90%;
   display: flex;
@@ -435,6 +434,7 @@ main hr {
   margin-bottom: 0;
   order: 0;
 }
+
 .about-me hr {
   border: 1px solid var(--white);
   width: 90%;
@@ -499,7 +499,7 @@ main hr {
   color: var(--red);
   align-items: center;
 }
+
 #rombus{
   transform: rotate(45deg)
 }
-
