@@ -465,15 +465,6 @@ main hr {
   order: 2;
 }
 
-.about-me ul p {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  margin-bottom: 44.73px;
-  margin-left: -28px;
-  display: flex;
-}
-
 .about-me ul li {
   font-weight: 400;
   font-size: 22px;
@@ -481,7 +472,16 @@ main hr {
   padding-bottom: 32px;
 }
 
-.about-me ul p i {
+.ul-title {
+  font-weight: 700;
+  font-size: 32px !important; 
+  line-height: 44px;
+  margin-bottom: 44.73px;
+  margin-left: -28px;
+  display: flex;
+}
+
+.ul-title i {
   font-size: 18px;
   margin-right: 12px;
   padding-top: 14px;
