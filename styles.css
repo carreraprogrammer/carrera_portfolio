@@ -126,6 +126,13 @@ header {
   text-align: left;
   font-style: bold;
   margin-top: 12px;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 52px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  order: 0;
 }
 
 .welcome-section p {
@@ -181,16 +188,6 @@ header {
   width: 100%;
 }
 
-.welcome-section h2 {
-  font-size: 2.5rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 52px;
-  padding-bottom: 12px;
-  padding-top: 12px;
-  order: 0;
-}
-
 main hr {
   width: 327px;
   border: 1px solid #212121;
@@ -207,7 +204,7 @@ main hr {
   align-items: center;
 }
 
-.img-placeholder { 
+.img-placeholder {
   background-color: var(--red);
   width: 90%;
   height: 220px;
