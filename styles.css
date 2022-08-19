@@ -302,27 +302,22 @@ main hr {
 
 .card-one {
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(https://i.pinimg.com/originals/22/90/7e/22907e25d191d94fa79b2b656a8a91d9.jpg);
-
 }
 
 .card-two {
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(https://i.pinimg.com/originals/27/67/fc/2767fc3d926540202b50f34ff93d84ec.jpg);
-
 }
 
 .card-three {
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(https://i.pinimg.com/originals/92/5e/4c/925e4c8312ce0df5344ad5ec70552db4.jpg);
-
 }
 
 .card-four {
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(https://i.pinimg.com/originals/62/e4/14/62e414ac641aa9becb946e599603cf96.jpg);
-
 }
 
 .card-five {
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(https://i.pinimg.com/originals/71/36/83/71368315b5d8a8733c91d4d961944511.jpg);
-
 }
 
 .card-title {
@@ -349,7 +344,7 @@ main hr {
   align-items: center;
 }
 
-.card-tags li{
+.card-tags li {
   height: 100%;
   display: flex;
   align-items: center;
@@ -449,7 +444,7 @@ main hr {
   margin-top: 126.5px;
   width: 90%;
   align-items: center;
-  order: 2; 
+  order: 2;
 }
 
 .frameworks {
