@@ -262,11 +262,6 @@ main hr {
   border: 1px solid var(--red);
 }
 
-.link-card-button {
-  width: 100%;
-  height: 48px;
-}
-
 .see-more-container {
   display: flex;
   width: 90%;
@@ -363,7 +358,7 @@ main hr {
 
 .link-card-button {
   width: 100%;
-  height: 50px;
+  height: 54px;
   color: var(--white);
   background-color: var(--red);
   border: none;
