@@ -15,7 +15,7 @@ html {
 :root {
   --black: black;
   --wine: #730d15;
-  --red: #f20519;
+  --red: rgb(242, 5, 25);
   --gray: gray;
   --gray2: #262626;
   --white: #f4f5f0;
@@ -29,6 +29,25 @@ body {
   word-spacing: 4px;
 }
 
+* .btn:hover {
+  color: var(--red);
+  border: 2px solid var(--red);
+  background-color: rgb(245, 216, 200);
+}
+
+* .btn:active{
+  background-color:rgb(200, 5, 25);
+  color: var(--white);
+}
+
+* .btn:disabled{
+  background-color: #F4F1F0;
+  color:  #5B5957;
+}
+
+* a {
+  text-decoration: none;
+}
 /* This is form 0 px to 760 px */
 
 .navbar {
@@ -267,6 +286,9 @@ main hr {
   background-color: var(--red);
   border: none;
   margin-top: 12px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
 }
 
 .projects-grid {
