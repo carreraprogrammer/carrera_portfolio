@@ -471,6 +471,7 @@ main hr {
   display: flex;
   flex-direction: column;
   margin-top: 44px;
+  margin-bottom: 119.54px;
   width: 90%;
   align-items: center;
   order: 2;
@@ -510,7 +511,7 @@ main hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: 150vh;
 }
 
 .form-title {
@@ -572,12 +573,33 @@ main hr {
   line-height: 24px;
   margin-top: 24px;
   border: none;
-  border-bottom:  1px solid #DBD8D7;
+  background-color: #FBF8F7;
+  display: block;
 }
 
-
 .form-message::placeholder {
-  padding-left: 16px;
-  width: 100%;
+  width: 303px;
+  height: 90px;
+  position: relative;
+  top: 12px;
+  left: 12px;
+  color: #3C3A39;
+}
+
+.form-submit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px; 
+  background: #FF6B00;
+  margin-top: 24px;
+  color: white;
+  border: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
 }
 
