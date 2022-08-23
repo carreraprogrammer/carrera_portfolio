@@ -544,3 +544,40 @@ main hr {
   width: 100%;
 }
 
+.form-email {
+  width: 327px;
+  height: 48px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  margin-top: 24px;
+  border: none;
+  border-bottom:  1px solid #DBD8D7;
+}  
+
+.form-email::placeholder {
+  padding-left: 16px;
+  width: 100%;
+}
+
+.form-message {
+  width: 327px;
+  height: 114px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  margin-top: 24px;
+  border: none;
+  border-bottom:  1px solid #DBD8D7;
+}
+
+
+.form-message::placeholder {
+  padding-left: 16px;
+  width: 100%;
+}
+
