@@ -507,11 +507,12 @@ main hr {
 }
 
 /*Here starts the contact section */
+
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 150vh;
+  height: 844px;
 }
 
 .form-title {
