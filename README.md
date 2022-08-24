@@ -34,6 +34,11 @@
 - GitHub: [@carreraprogrammer](https://github.com/carreraprogrammer)
 - Twitter: [@carreraprogrammer](https://twitter.com/carreraprog)
 - LinkedIn: [Daniel Carrera] (https://www.linkedin.com/in/daniel-carrera-paz-85a917244/)
+
+👤 **Ivan Martinez von Halle**
+
+- GitHub: [@ivanmvh](https://github.com/ivanmvh)
+- Twitter: [@imprivado](https://twitter.com/imprivado)
 ​
 ​
 ## �� Contributing

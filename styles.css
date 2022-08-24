@@ -471,6 +471,7 @@ main hr {
   display: flex;
   flex-direction: column;
   margin-top: 44px;
+  margin-bottom: 119.54px;
   width: 90%;
   align-items: center;
   order: 2;
@@ -503,4 +504,120 @@ main hr {
 
 #rombus {
   transform: rotate(45deg);
+}
+
+/* Here starts the contact section */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 844px;
+}
+
+.form-title {
+  margin-top: 120px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  margin-left: 24px;
+  margin-right: 24px;
+  text-align: center;
+  color: #172b4d;
+}
+
+.form-name {
+  width: 327px;
+  height: 48px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  margin-top: 58px;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+}
+
+.form-name::placeholder {
+  padding-left: 16px;
+  width: 100%;
+}
+
+.form-email {
+  width: 327px;
+  height: 48px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  margin-top: 24px;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+}
+
+.form-email::placeholder {
+  padding-left: 16px;
+  width: 100%;
+}
+
+.form-message {
+  width: 327px;
+  height: 114px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  margin-top: 24px;
+  border: none;
+  background-color: #fbf8f7;
+  display: block;
+}
+
+.form-message::placeholder {
+  width: 303px;
+  height: 90px;
+  position: relative;
+  top: 12px;
+  left: 12px;
+  color: #3c3a39;
+}
+
+.form-submit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  background: #ff6b00;
+  margin-top: 24px;
+  color: white;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.icons-footer {
+  height: 72px;
+  width: 375px;
+  border-top: 1px solid #dfe1e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons-container {
+  margin-top: 15px;
+}
+
+.icons-container img {
+  padding: 10px;
 }

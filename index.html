@@ -9,6 +9,9 @@
       <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="styles.css">
       <script src="https://kit.fontawesome.com/321e54ee43.js" crossorigin="anonymous"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
     </head>
     <body>
 
@@ -197,8 +200,29 @@
             </ul>
             
         </section>
-        
 
       </main>
+      <footer>
+        <form class ="contact-form" action="https://formspree.io/f/mzbwzeen"
+        method="POST">
+           <h2 class="form-title">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2> 
+           <input type="text" class="form-name" name="full-name" placeholder="Full name" required maxlength="30">
+           <input type="email" class="form-email" name="email" placeholder="Email address" required>
+           <textarea class="form-message" name="message" placeholder="Enter text here" required maxlength="500"></textarea>
+           <input type="submit" class="form-submit btn" value="Get in touch">
+        </form>
+        <div class="icons-footer">
+          <div class="icons-container">
+            <a href="https://github.com/carreraprogrammer"><img src="vectors/github.png" alt="github"></a>
+            <a href="https://www.linkedin.com/in/daniel-carrera-paz-85a917244/"><img src="vectors/Linkedin.png" alt="linkedin"></a>
+            <a href=""><img src="vectors/icon.png" alt="icon"></a>
+            <a href="https://twitter.com/carreraprog"><img src="vectors/twitter.png" alt="twitter"></a>
+            <a href=""><img src="vectors/icon2.png" alt="icon2"></a>
+          </div>
+          <div class="div-container">
+            <img class="div" src="vectors/Shape.png" alt="shape">
+          </div>
+        </div>
+      </footer>
     </body>
 </html>
