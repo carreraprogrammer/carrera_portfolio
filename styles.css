@@ -506,7 +506,7 @@ main hr {
   transform: rotate(45deg);
 }
 
-/*Here starts the contact section */
+/* Here starts the contact section */
 
 .contact-form {
   display: flex;
@@ -517,7 +517,7 @@ main hr {
 
 .form-title {
   margin-top: 120px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -525,20 +525,20 @@ main hr {
   margin-left: 24px;
   margin-right: 24px;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .form-name {
   width: 327px;
   height: 48px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   margin-top: 58px;
   border: none;
-  border-bottom:  1px solid #DBD8D7;
+  border-bottom: 1px solid #dbd8d7;
 }
 
 .form-name::placeholder {
@@ -549,15 +549,15 @@ main hr {
 .form-email {
   width: 327px;
   height: 48px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   margin-top: 24px;
   border: none;
-  border-bottom:  1px solid #DBD8D7;
-}  
+  border-bottom: 1px solid #dbd8d7;
+}
 
 .form-email::placeholder {
   padding-left: 16px;
@@ -567,14 +567,14 @@ main hr {
 .form-message {
   width: 327px;
   height: 114px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   margin-top: 24px;
   border: none;
-  background-color: #FBF8F7;
+  background-color: #fbf8f7;
   display: block;
 }
 
@@ -584,7 +584,7 @@ main hr {
   position: relative;
   top: 12px;
   left: 12px;
-  color: #3C3A39;
+  color: #3c3a39;
 }
 
 .form-submit {
@@ -592,15 +592,14 @@ main hr {
   flex-direction: row;
   align-items: center;
   padding: 12px;
-  gap: 10px; 
-  background: #FF6B00;
+  gap: 10px;
+  background: #ff6b00;
   margin-top: 24px;
   color: white;
   border: none;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
 }
-
