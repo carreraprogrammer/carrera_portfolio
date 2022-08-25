@@ -49,7 +49,9 @@ body {
   text-decoration: none;
 }
 
-/* This is form 0 px to 760 px */
+/* This is form 0 px to 768 px */
+
+/* Here starts the navbar */
 
 .navbar {
   display: flex;
@@ -71,6 +73,10 @@ body {
   align-items: center;
 }
 
+#desktop-menu {
+  display: none;
+}
+
 #burguer-menu {
   flex: 1;
   display: flex;
@@ -89,6 +95,8 @@ body {
   align-items: flex-end;
 }
 
+/* Here starts the welcome page */
+
 header {
   height: 682px;
   background-color: var(--black);
@@ -103,19 +111,24 @@ header {
   justify-content: center;
 }
 
+.welcome-text {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
 .welcome-section h1 {
   font-size: 3.5rem;
   line-height: 4rem;
   text-align: left;
   font-weight: 400;
   word-spacing: 0.35px;
-  width: 85%;
+  width: 100%;
   color: var(--red);
   margin-top: 120px;
 }
 
 .welcome-section h2 {
-  width: 85%;
+  width: 100%;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -126,7 +139,7 @@ header {
 .welcome-section p {
   font-size: 16px;
   font-weight: 400;
-  width: 85%;
+  width: 100%;
   color: #fff;
   line-height: 24px;
   word-spacing: 1px;
@@ -166,12 +179,18 @@ header {
   max-height: 100%;
 }
 
+.illustration-header-desktop {
+  display: none;
+}
+
 .vectors {
   position: relative;
   margin-top: -55%;
   height: 256.89px;
   width: 261.83px;
 }
+
+/* Here ends the welcome page */
 
 .works {
   padding-top: 120px;
@@ -620,4 +639,168 @@ main hr {
 
 .icons-container img {
 padding: 10px;
+}
+
+/* This is from 768 px onwards */
+
+@media (min-width: 1000px) {
+
+  /* Here starts the navbar */
+
+  .navbar {
+    height: 72px;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+  }
+  
+  .logo {
+    max-width: 200px;
+    height: 40px;
+    margin-left: 0;
+    font-size: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .logo-link {
+    flex-basis: 50%;
+    margin-left: 10%;
+  }
+
+  #desktop-menu {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: right;
+    color: #fff;
+    height: 100%;
+  }
+  
+  #desktop-ul {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    list-style: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px; 
+  }
+
+  #desktop-ul li {
+    margin-left: 30px;
+    cursor: pointer;
+  }
+
+  .envelope-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 151px;
+  }
+
+  .envelope {
+    height: 18px;
+    width: auto;
+    cursor: pointer;
+  }
+  
+  #burguer-menu {
+    display: none;
+  }
+  
+  #logo-dat {
+    font-size: 10px;
+  }
+
+  /* Here navbar ends */
+
+  /* Here starts the welcome page */
+
+header {
+  height: 870px;
+  z-index: 0;
+}
+
+.welcome-section {
+  flex-direction: row;
+  height: 870px;
+  padding-top: 72px;
+  overflow: hidden;
+}
+
+.welcome-text {
+  height: 739px;
+  margin-bottom: 59px;  
+  flex-basis: 45%;
+}
+
+.welcome-section h1 {
+  font-size: 4.5rem;
+  line-height: 5.1rem;
+  width: 100%;
+  margin-top: 192px;
+}
+
+.welcome-section h2 {
+  width: 100%;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 44px;
+  margin-top: 24px;
+}
+
+.welcome-section p {
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  margin-top: 24px;
+}
+
+.social-icons {
+  flex-direction: column;
+  width: 100%;
+  flex-basis: 5%;
+  margin-left: 36px;
+  order: -1;
+}
+
+.social-icons i {
+  margin-top: 20px;
+}
+
+.illustration-header-mobile {
+ display: none;
+}
+
+.illustration-header-desktop {
+  display: flex;
+  justify-content: right;
+  flex-basis: 50%;
+  height: 100%;
+  transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
+  position: relative;
+  left: 5%;
+}
+
+#vectors-illustration-desktop{
+  max-height: 100%;
+  max-width: 100%;
+  width: 645.51px;
+  height: 633.32px;
+  transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
+  position: relative;
+  right: 22%;
+}
+
+/* Here ends the welcome page */
 }
