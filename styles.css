@@ -408,11 +408,16 @@ main hr {
 
 .about-me {
   background-color: #1c1a19;
+  margin-top: 2px;
   color: var(--white);
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
+
+.about-me-description {
+  width: 90%;
 }
 
 .about-me h2 {
@@ -431,6 +436,7 @@ main hr {
   font-size: 16px;
   line-height: 24px;
   margin-top: 24px;
+  font-style: 'Inter', sans-serif;
 }
 
 .get-resume-container {
@@ -453,6 +459,7 @@ main hr {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+  font-family: 'Inter', sans-serif;
 }
 
 .illustration-about {
@@ -465,6 +472,10 @@ main hr {
   order: 0;
 }
 
+.illustration-about-container {
+  display: none;
+}
+
 .about-me hr {
   border: 1px solid var(--white);
   width: 90%;
@@ -472,7 +483,16 @@ main hr {
   margin-top: 22.6px;
 }
 
-.about-me li {
+.technologies {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: #1c1a19;
+}
+
+.technologies li {
   list-style: none;
 }
 
@@ -504,7 +524,7 @@ main hr {
   order: 2;
 }
 
-.about-me ul li {
+.technologies ul li {
   font-weight: 400;
   font-size: 22px;
   line-height: 43px;
@@ -1029,21 +1049,128 @@ header {
 }
 
 .link-card-button {
-  width: 100%;
-  height: 48px;
-  color: var(--white);
+  height: 58px;
   background-color: #f55800;
-  border: none;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Here ends project grid */
 
+/* Here starts the about me section */
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.about-me-description {
+  flex-basis: 50%;
+  margin-left: 9.8vw;
+}
+
+.about-me h2 {
+  line-height: 81.5px;
+  color: var(--red);
+  margin-top: 9.2vw;
+}
+
+.about-me p {
+  width: 90%;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  font-style: 'Inter', sans-serif;
+}
+
+.get-resume-btn {
+  margin-top: 24px;
+  margin-bottom: 139px;
+}
+
+.illustration-about {
+  display: none;
+}
+
+.illustration-about-container {
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 50%;
+  margin-bottom: 9.6vw;
+  margin-top: 6.87vw;
+}
+
+.about-me hr {
+  display: none;
+}
+
+.hr-about-desktop {
+  border: 1px solid #fff;
+  width: 80.27vw;
+  margin-left: 9.86vw;
+  margin-top: 0;
+  background-color: black;
+  position: absolute;
+}
+
+.technologies {
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.technologies li {
+  list-style: none;
+}
+
+.languages {
+  align-items: center;
+  justify-content: left;
+  margin-top: 0;
+}
+
+.frameworks {
+  align-items: center;
+  justify-content: left;
+  margin-top: 0;
+}
+
+.skills {
+  align-items: center;
+  justify-content: left;
+  margin-top: 0;
+}
+
+.technologies ul li {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  padding-bottom: 32px;
+  width: 30%;
+}
+
+.ul-title {
+  margin-top: 146px;
+  font-weight: 700;
+  font-size: 32px !important;
+  line-height: 44px;
+  margin-bottom: 44.73px;
+  margin-left: -28px;
+  display: flex;
+  width: 30%;
+  margin-left: 1.5%;
+}
+
+.ul-title i {
+  font-size: 18px;
+  margin-right: 12px;
+  padding-top: 14px;
+  flex-direction: row;
+  align-items: center;
+  color: var(--red);
+}
+
+#rombus {
+  transform: rotate(45deg);
+}
 
 }
