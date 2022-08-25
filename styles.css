@@ -483,6 +483,10 @@ main hr {
   margin-top: 22.6px;
 }
 
+.hr-about-desktop {
+  display: none;
+}
+
 .technologies {
   width: 100%;
   display: flex;
@@ -559,7 +563,7 @@ main hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 844px;
+  margin-bottom: 124px;
 }
 
 .form-title {
@@ -1105,6 +1109,7 @@ header {
 }
 
 .hr-about-desktop {
+  display: flex;
   border: 1px solid #fff;
   width: 80.27vw;
   margin-left: 9.86vw;
@@ -1116,6 +1121,7 @@ header {
 .technologies {
   flex-direction: row;
   align-items: flex-start;
+  margin-top: -4px;
 }
 
 .technologies li {
@@ -1144,33 +1150,68 @@ header {
   font-weight: 400;
   font-size: 22px;
   line-height: 43px;
-  padding-bottom: 32px;
+  padding-bottom: 12px;
+  padding-top: 12px;
   width: 30%;
 }
 
 .ul-title {
-  margin-top: 146px;
-  font-weight: 700;
-  font-size: 32px !important;
-  line-height: 44px;
-  margin-bottom: 44.73px;
-  margin-left: -28px;
+  margin-top: 146px !important;
+  margin-bottom: 0;
+}
+
+/* Here starts the contact section */
+
+footer {
   display: flex;
-  width: 30%;
-  margin-left: 1.5%;
 }
 
-.ul-title i {
-  font-size: 18px;
-  margin-right: 12px;
-  padding-top: 14px;
-  flex-direction: row;
-  align-items: center;
-  color: var(--red);
+.contact-form {
+  height: 30.9vw;
+  width: 47.5vw;
+  flex-basis: 60%;
+  margin: 0;
+  margin-right: 9.37vw;
+  margin-top: 9.02vw;
+  align-items: left;
 }
 
-#rombus {
-  transform: rotate(45deg);
+.form-title {
+  flex-basis: 40%;
+  margin-top: 9.02vw;
+  margin-bottom: 15.83vw;
+  font-size: 40px;
+  line-height: 52px;
+  margin-left: 9.37vw;
+  margin-right: 24px;
+  text-align: left;
+  color:  #262626;
+}
+
+.form-name {
+  width: 100%;
+  margin-top: 0;
+}
+
+.form-email {
+  width: 100%;
+}
+
+.form-message {
+  width: 100%;
+  height: 142px;
+}
+
+.form-submit {
+  margin-left: -80%;
+}
+
+.icons-footer {
+  width: 100%;
+}
+
+.div-container {
+  display: none;
 }
 
 }
