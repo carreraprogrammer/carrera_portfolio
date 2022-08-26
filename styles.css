@@ -49,12 +49,15 @@ body {
   text-decoration: none;
 }
 
+.div-flex {
+  display: flex;
+}
+
 /* This is form 0 px to 768 px */
 
 /* Here starts the navbar */
 
 .navbar {
-  display: flex;
   height: 48px;
   background-color: var(--gray);
   color: var(--white);
@@ -62,14 +65,12 @@ body {
 
 .logo {
   flex: 1;
-  display: flex;
   align-items: center;
   margin-left: 5%;
 }
 
 .logo-link {
   height: 100%;
-  display: flex;
   align-items: center;
 }
 
@@ -79,7 +80,6 @@ body {
 
 #burguer-menu {
   flex: 1;
-  display: flex;
   align-items: center;
   justify-content: right;
   margin-right: 5%;
@@ -91,7 +91,6 @@ body {
   margin: 0;
   color: var(--red);
   height: 1rem;
-  display: flex;
   align-items: flex-end;
 }
 
@@ -103,7 +102,7 @@ header {
 }
 
 .welcome-section {
-  display: flex;
+
   flex-direction: column;
   align-items: center;
   height: 93%;
@@ -149,7 +148,6 @@ header {
 }
 
 .social-icons {
-  display: flex;
   font-size: 20px;
   width: 85%;
   margin-top: 20px;
@@ -169,7 +167,6 @@ header {
 }
 
 .illustration-header-mobile {
-  display: flex;
   left: 15%;
   height: 240.89px;
   width: 100%;
@@ -196,7 +193,6 @@ header {
 
 .works {
   padding-top: 120px;
-  display: flex;
   align-items: center;
   flex-direction: column;
   width: 100%;
@@ -213,7 +209,6 @@ main hr {
   height: 568px;
   margin-top: 80px;
   width: 100%;
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -225,7 +220,6 @@ main hr {
 .img-placeholder-mobile {
   width: 327px;
   height: 237px;
-  display: flex;
   align-items: center;
 }
 
@@ -240,7 +234,6 @@ main hr {
 
 .works-title-container {
   width: 100%;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -249,7 +242,6 @@ main hr {
 
 .works-divider {
   width: 80%;
-  display: flex;
   justify-content: center;
   border: 1px solid var(--black);
   background-color: black;
@@ -278,7 +270,6 @@ main hr {
 }
 
 .tags {
-  display: flex;
   width: 327px;
   height: 40px;
   margin-top: 12px;
@@ -299,14 +290,12 @@ main hr {
 }
 
 .see-more-container {
-  display: flex;
   width: 327px;
   justify-content: left;
   margin-bottom: 24px;
 }
 
 .see-more-btn {
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 124px;
@@ -340,7 +329,6 @@ main hr {
 .project-card {
   height: 386px;
   color: white;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
@@ -367,7 +355,6 @@ main hr {
 }
 
 .card-tags {
-  display: flex;
   width: 90%;
   margin-top: 12px;
   height: 40px;
@@ -387,7 +374,6 @@ main hr {
 
 .card-tags-ul-li {
   height: 100%;
-  display: flex;
   align-items: center;
   padding-left: 12px;
   padding-right: 12px;
@@ -408,7 +394,6 @@ main hr {
   font-size: 17px;
   line-height: 24px;
   margin-top: 20px;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -421,7 +406,6 @@ main hr {
   background-color: #1c1a19;
   margin-top: 2px;
   color: var(--white);
-  display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
@@ -451,14 +435,12 @@ main hr {
 }
 
 .get-resume-container {
-  display: flex;
   width: 327px;
   justify-content: left;
   margin-bottom: 24px;
 }
 
 .get-resume-btn {
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 161px;
@@ -500,7 +482,6 @@ main hr {
 
 .technologies {
   width: 100%;
-  display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
@@ -508,7 +489,6 @@ main hr {
 }
 
 .languages {
-  display: flex;
   flex-direction: column;
   margin-top: 126.5px;
   width: 90%;
@@ -517,7 +497,6 @@ main hr {
 }
 
 .frameworks {
-  display: flex;
   flex-direction: column;
   margin-top: 44px;
   width: 90%;
@@ -526,7 +505,6 @@ main hr {
 }
 
 .skills {
-  display: flex;
   flex-direction: column;
   margin-top: 44px;
   margin-bottom: 119.54px;
@@ -541,7 +519,6 @@ main hr {
   line-height: 44px;
   margin-bottom: 44.73px;
   margin-left: -28px;
-  display: flex;
 }
 
 .ul-title i {
@@ -559,8 +536,11 @@ main hr {
 
 /* Here starts the contact section */
 
+footer {
+  flex-direction: column;
+}
+
 .contact-form {
-  display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 124px;
@@ -639,7 +619,6 @@ main hr {
 }
 
 .form-submit {
-  display: flex;
   flex-direction: row;
   align-items: center;
   padding: 12px;
@@ -659,7 +638,6 @@ main hr {
   height: 72px;
   width: 375px;
   border-top: 1px solid #dfe1e6;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -704,7 +682,6 @@ main hr {
   }
 
   #desktop-menu {
-    display: flex;
     flex-basis: 50%;
     justify-content: right;
     color: #fff;
@@ -721,7 +698,6 @@ main hr {
   }
 
   #desktop-ul-menu {
-    display: flex;
     height: 100%;
     align-items: center;
     list-style: none;
@@ -738,7 +714,6 @@ main hr {
   }
 
   .envelope-container {
-    display: flex;
     height: 100%;
     align-items: center;
     margin-left: 30px;
@@ -845,7 +820,6 @@ main hr {
 
   .works {
     padding-top: 135px;
-    display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
@@ -890,10 +864,10 @@ main hr {
   }
 
   .img-placeholder-desktop {
+    display: flex;
     flex-basis: 56%;
     width: 45vw;
     height: 31vw;
-    display: flex;
     align-items: center;
     margin-right: 1.6vw;
     max-width: 1445px;
@@ -909,7 +883,6 @@ main hr {
     flex-basis: 44%;
     width: 100%;
     height: 100%;
-    display: flex;
     flex-direction: column;
     margin-top: 0;
     align-items: flex-start;
@@ -1048,7 +1021,6 @@ main hr {
   }
 
   .card-tags-ul-li {
-    display: flex;
     align-items: center;
     padding-left: 12px;
     padding-right: 12px;
@@ -1070,7 +1042,6 @@ main hr {
   /* Here starts the about me section */
 
   .about-me {
-    display: flex;
     flex-direction: row;
     align-items: center;
     width: 100%;
@@ -1170,7 +1141,7 @@ main hr {
   /* Here starts the contact section */
 
   footer {
-    display: flex;
+    flex-direction: row;
   }
 
   .contact-form {
