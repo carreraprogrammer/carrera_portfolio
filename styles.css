@@ -966,7 +966,13 @@ footer {
     height: 31.1vw;
     margin-bottom: 24px;
     align-items: baseline;
+    transition: 0.5s all;
   }
+
+  .project-card:hover {
+    transform: scale(1.05, 1.05);
+    border: 2px solid #ff6b00;
+  }  
 
   .card-one {
     background: url(vectors/Img_desktop1.png);
