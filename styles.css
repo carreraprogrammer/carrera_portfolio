@@ -77,7 +77,7 @@ body {
 
 .logo:hover {
   transform: rotate(15deg);
-  color: #ff6b00;
+  color: #172B4D;
   transform: scale(1.05);
 }
 
@@ -729,6 +729,12 @@ footer {
   #desktop-ul-menu li {
     margin-left: 30px;
     cursor: pointer;
+    transition: 0.5s all;
+  }
+
+  #desktop-ul-menu li:hover {
+    transform: scale(1.1);
+    color: #172b4d;
   }
 
   .envelope-container {
@@ -742,6 +748,11 @@ footer {
     height: 18px;
     width: auto;
     cursor: pointer;
+  }
+
+  .envelope:hover {
+    transform: scale(1.1);
+    color: #172B4D;
   }
 
   #burguer-menu {
@@ -1060,6 +1071,11 @@ footer {
     height: 58px;
     background-color: #f55800;
   }
+
+  .link-card-button:hover {
+    transform: scale(1.02);
+  }
+  
 
   /* Here ends project grid */
 
