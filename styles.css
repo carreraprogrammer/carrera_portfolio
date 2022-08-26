@@ -1048,7 +1048,6 @@ main hr {
   }
 
   .card-tags-ul-li {
-    height: 100%;
     display: flex;
     align-items: center;
     padding-left: 12px;
