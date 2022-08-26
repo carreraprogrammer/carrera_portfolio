@@ -1137,6 +1137,14 @@ main hr {
     list-style: none;
   }
 
+  #technologies-ul2 li {
+    list-style: none;
+  }
+
+  #technologies-ul3 li {
+    list-style: none;
+  }
+
   .languages {
     align-items: center;
     justify-content: left;
