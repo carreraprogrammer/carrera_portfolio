@@ -36,7 +36,7 @@ body {
 }
 
 * .btn:active {
-  background-color: rgb(200, 5, 25);
+  background-color: #e05304;
   color: var(--white);
 }
 
@@ -49,12 +49,15 @@ body {
   text-decoration: none;
 }
 
+.div-flex {
+  display: flex;
+}
+
 /* This is form 0 px to 768 px */
 
 /* Here starts the navbar */
 
 .navbar {
-  display: flex;
   height: 48px;
   background-color: var(--gray);
   color: var(--white);
@@ -62,14 +65,12 @@ body {
 
 .logo {
   flex: 1;
-  display: flex;
   align-items: center;
   margin-left: 5%;
 }
 
 .logo-link {
   height: 100%;
-  display: flex;
   align-items: center;
 }
 
@@ -78,20 +79,20 @@ body {
 }
 
 #burguer-menu {
-  flex: 1;
   display: flex;
+  flex: 1;
   align-items: center;
   justify-content: right;
   margin-right: 5%;
 }
 
 #logo-dat {
+  display: flex;
   font-size: 5px;
   padding: 0;
   margin: 0;
   color: var(--red);
   height: 1rem;
-  display: flex;
   align-items: flex-end;
 }
 
@@ -103,7 +104,6 @@ header {
 }
 
 .welcome-section {
-  display: flex;
   flex-direction: column;
   align-items: center;
   height: 93%;
@@ -149,7 +149,6 @@ header {
 }
 
 .social-icons {
-  display: flex;
   font-size: 20px;
   width: 85%;
   margin-top: 20px;
@@ -169,7 +168,6 @@ header {
 }
 
 .illustration-header-mobile {
-  display: flex;
   left: 15%;
   height: 240.89px;
   width: 100%;
@@ -196,7 +194,6 @@ header {
 
 .works {
   padding-top: 120px;
-  display: flex;
   align-items: center;
   flex-direction: column;
   width: 100%;
@@ -213,7 +210,6 @@ main hr {
   height: 568px;
   margin-top: 80px;
   width: 100%;
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -225,7 +221,6 @@ main hr {
 .img-placeholder-mobile {
   width: 327px;
   height: 237px;
-  display: flex;
   align-items: center;
 }
 
@@ -240,7 +235,6 @@ main hr {
 
 .works-title-container {
   width: 100%;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -249,7 +243,6 @@ main hr {
 
 .works-divider {
   width: 80%;
-  display: flex;
   justify-content: center;
   border: 1px solid var(--black);
   background-color: black;
@@ -278,7 +271,6 @@ main hr {
 }
 
 .tags {
-  display: flex;
   width: 327px;
   height: 40px;
   margin-top: 12px;
@@ -299,14 +291,12 @@ main hr {
 }
 
 .see-more-container {
-  display: flex;
   width: 327px;
   justify-content: left;
   margin-bottom: 24px;
 }
 
 .see-more-btn {
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 124px;
@@ -340,7 +330,6 @@ main hr {
 .project-card {
   height: 386px;
   color: white;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
@@ -367,7 +356,6 @@ main hr {
 }
 
 .card-tags {
-  display: flex;
   width: 90%;
   margin-top: 12px;
   height: 40px;
@@ -387,7 +375,6 @@ main hr {
 
 .card-tags-ul-li {
   height: 100%;
-  display: flex;
   align-items: center;
   padding-left: 12px;
   padding-right: 12px;
@@ -408,7 +395,6 @@ main hr {
   font-size: 17px;
   line-height: 24px;
   margin-top: 20px;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -421,7 +407,6 @@ main hr {
   background-color: #1c1a19;
   margin-top: 2px;
   color: var(--white);
-  display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
@@ -451,14 +436,12 @@ main hr {
 }
 
 .get-resume-container {
-  display: flex;
   width: 327px;
   justify-content: left;
   margin-bottom: 24px;
 }
 
 .get-resume-btn {
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 161px;
@@ -500,7 +483,6 @@ main hr {
 
 .technologies {
   width: 100%;
-  display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
@@ -508,7 +490,6 @@ main hr {
 }
 
 .languages {
-  display: flex;
   flex-direction: column;
   margin-top: 126.5px;
   width: 90%;
@@ -517,7 +498,6 @@ main hr {
 }
 
 .frameworks {
-  display: flex;
   flex-direction: column;
   margin-top: 44px;
   width: 90%;
@@ -526,7 +506,6 @@ main hr {
 }
 
 .skills {
-  display: flex;
   flex-direction: column;
   margin-top: 44px;
   margin-bottom: 119.54px;
@@ -541,7 +520,6 @@ main hr {
   line-height: 44px;
   margin-bottom: 44.73px;
   margin-left: -28px;
-  display: flex;
 }
 
 .ul-title i {
@@ -559,8 +537,11 @@ main hr {
 
 /* Here starts the contact section */
 
+footer {
+  flex-direction: column;
+}
+
 .contact-form {
-  display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 124px;
@@ -639,7 +620,6 @@ main hr {
 }
 
 .form-submit {
-  display: flex;
   flex-direction: row;
   align-items: center;
   padding: 12px;
@@ -659,7 +639,6 @@ main hr {
   height: 72px;
   width: 375px;
   border-top: 1px solid #dfe1e6;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -678,4 +657,542 @@ main hr {
 @media screen and (min-width: 768px) {
   /* Here starts the navbar */
 
+  .navbar {
+    height: 72px;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+  }
+
+  .logo {
+    max-width: 200px;
+    height: 40px;
+    margin-left: 0;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .logo-link {
+    flex-basis: 50%;
+    margin-left: 10%;
+  }
+
+  #desktop-menu {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: right;
+    color: #fff;
+    height: 100%;
+  }
+
+  .technologies ul li {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 43px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    width: 30%;
+  }
+
+  #desktop-ul-menu {
+    height: 100%;
+    align-items: center;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  #desktop-ul-menu li {
+    margin-left: 30px;
+    cursor: pointer;
+  }
+
+  .envelope-container {
+    height: 100%;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 151px;
+  }
+
+  .envelope {
+    height: 18px;
+    width: auto;
+    cursor: pointer;
+  }
+
+  #burguer-menu {
+    display: none;
+  }
+
+  #logo-dat {
+    font-size: 10px;
+  }
+
+  /* Here navbar ends */
+
+  /* Here starts the welcome page */
+
+  header {
+    height: 100vh;
+    z-index: 0;
+  }
+
+  .welcome-section {
+    flex-direction: row;
+    height: 870px;
+    padding-top: 72px;
+    overflow: hidden;
+  }
+
+  .welcome-text {
+    height: 739px;
+    margin-bottom: 59px;
+    flex-basis: 45%;
+  }
+
+  .welcome-section h1 {
+    font-size: 4.5rem;
+    line-height: 5.1rem;
+    width: 100%;
+    margin-top: 192px;
+  }
+
+  .welcome-section h2 {
+    width: 100%;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 44px;
+    margin-top: 24px;
+  }
+
+  .welcome-section p {
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    margin-top: 24px;
+  }
+
+  .social-icons {
+    flex-direction: column;
+    width: 100%;
+    flex-basis: 5%;
+    margin-left: 36px;
+    order: -1;
+  }
+
+  .social-icons i {
+    margin-top: 20px;
+  }
+
+  .illustration-header-mobile {
+    display: none;
+  }
+
+  .illustration-header-desktop {
+    display: flex;
+    justify-content: right;
+    flex-basis: 50%;
+    height: 100%;
+    transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
+    position: relative;
+    left: 5%;
+  }
+
+  #vectors-illustration-desktop {
+    max-height: 100%;
+    max-width: 100%;
+    width: 44.7vw;
+    height: 43.9vw;
+    transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
+  }
+
+  /* Here ends the welcome page */
+
+  /* Here starts daily selection section */
+
+  .works {
+    padding-top: 135px;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .works-title {
+    justify-content: center;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .works-title-container {
+    flex-direction: row;
+    align-items: center;
+    width: 78.68vw;
+    justify-content: center;
+    margin-top: 135px;
+  }
+
+  .works-divider {
+    width: 55%;
+    margin-left: 1.6vw;
+    margin-bottom: 12px;
+    color: #212121;
+  }
+
+  .daily-selection {
+    height: 31vw;
+    margin-top: 100px;
+    width: 80.2vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 1445px;
+    max-height: 560px;
+    min-width: 1040px;
+  }
+
+  .img-placeholder-mobile {
+    display: none;
+  }
+
+  .img-placeholder-desktop {
+    display: flex;
+    flex-basis: 56%;
+    width: 45vw;
+    height: 31vw;
+    align-items: center;
+    margin-right: 1.6vw;
+    max-width: 1445px;
+    max-height: 560px;
+  }
+
+  .img-daily-desktop {
+    width: 100%;
+    height: 100%;
+  }
+
+  .daily-selection article {
+    flex-basis: 44%;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    margin-top: 0;
+    align-items: flex-start;
+    gap: 1.92%;
+  }
+
+  .daily-selection article h3 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .daily-selection p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #091e42;
+  }
+
+  .tags {
+    width: 1.57vw;
+    height: 2.7vw;
+    gap: 20px;
+  }
+
+  #desktop-ul li {
+    padding-right: 0.83vw;
+    padding-left: 0.83vw;
+    padding-bottom: 0.69vw;
+    padding-top: 0.69vw;
+  }
+
+  .see-more-container {
+    width: 22.7vw;
+    margin-bottom: 24px;
+  }
+
+  .see-more-btn {
+    width: 8.6vw;
+    height: 3.3vw;
+  }
+
+  /* Here daily selection ends */
+
+  /* Here starts project grid */
+
+  .projects-grid {
+    display: none;
+  }
+
+  .projects-grid-desktop {
+    display: grid;
+    width: 80.2vw;
+    gap: 1.6vw;
+    grid-template-columns: 31.94% 31.94% 31.94%;
+    margin-bottom: 120px;
+    margin-top: 1.6vw;
+    max-width: 1445px;
+    min-width: 1040px;
+    min-height: 440px;
+  }
+
+  .project-card {
+    height: 31.1vw;
+    margin-bottom: 24px;
+    align-items: baseline;
+  }
+
+  .card-one {
+    background: url(vectors/Img_desktop1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid black;
+  }
+
+  .card-two {
+    background: url(vectors/Img_desktop2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card-three {
+    background: url(vectors/Img_desktop3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card-four {
+    background: url(vectors/Img_desktop4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card-five {
+    background: url(vectors/Img_desktop2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card-six {
+    background: url(vectors/Img_desktop3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .card-link {
+    color: #fff;
+  }
+
+  .card-title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    width: 23.4vw;
+    margin-top: 12.36vw;
+    margin-left: 1.1vw;
+    margin-right: 1.1vw;
+  }
+
+  .card-description {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    margin-top: 1.6vw;
+    width: 23.4vw;
+    margin-left: 1.1vw;
+    margin-right: 1.1vw;
+  }
+
+  .card-tags {
+    margin-top: 1.6vw;
+    margin-bottom: 1.11vw;
+    height: 40px;
+    align-items: center;
+    margin-left: 1.1vw;
+    margin-right: 1.1vw;
+  }
+
+  .card-tags-ul-li {
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 40px;
+    margin-right: 12px;
+    background: rgba(255, 255, 255, 0.24);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .link-card-button {
+    height: 58px;
+    background-color: #f55800;
+  }
+
+  /* Here ends project grid */
+
+  /* Here starts the about me section */
+
+  .about-me {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+
+  .about-me-description {
+    flex-basis: 50%;
+    margin-left: 9.8vw;
+  }
+
+  .about-me h2 {
+    line-height: 81.5px;
+    color: var(--red);
+    margin-top: 9.2vw;
+  }
+
+  .about-me p {
+    width: 90%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    font-style: 'Inter', sans-serif;
+  }
+
+  .get-resume-btn {
+    margin-top: 24px;
+    margin-bottom: 139px;
+  }
+
+  .illustration-about {
+    display: none;
+  }
+
+  .illustration-about-container {
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 50%;
+    margin-bottom: 9.6vw;
+    margin-top: 6.87vw;
+  }
+
+  .about-me hr {
+    display: none;
+  }
+
+  .hr-about-desktop {
+    display: flex;
+    border: 1px solid #fff;
+    width: 80.27vw;
+    margin-left: 9.86vw;
+    margin-top: 0;
+    background-color: black;
+    position: absolute;
+  }
+
+  .technologies {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: -4px;
+  }
+
+  #technologies-ul li {
+    list-style: none;
+  }
+
+  #technologies-ul2 li {
+    list-style: none;
+  }
+
+  #technologies-ul3 li {
+    list-style: none;
+  }
+
+  .languages {
+    align-items: center;
+    justify-content: left;
+    margin-top: 0;
+  }
+
+  .frameworks {
+    align-items: center;
+    justify-content: left;
+    margin-top: 0;
+  }
+
+  .skills {
+    align-items: center;
+    justify-content: left;
+    margin-top: 0;
+  }
+
+  .ul-title {
+    margin-top: 146px !important;
+    margin-bottom: 0;
+  }
+
+  /* Here starts the contact section */
+
+  footer {
+    flex-direction: row;
+  }
+
+  .contact-form {
+    height: 30.9vw;
+    width: 47.5vw;
+    flex-basis: 60%;
+    margin: 0;
+    margin-right: 9.37vw;
+    margin-top: 9.02vw;
+    align-items: left;
+  }
+
+  .form-title {
+    flex-basis: 40%;
+    margin-top: 9.02vw;
+    margin-bottom: 15.83vw;
+    font-size: 40px;
+    line-height: 52px;
+    margin-left: 9.37vw;
+    margin-right: 24px;
+    text-align: left;
+    color: #262626;
+    max-width: 546px;
+  }
+
+  .form-name {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .form-email {
+    width: 100%;
+  }
+
+  .form-message {
+    width: 100%;
+    height: 142px;
+  }
+
+  .form-submit {
+    margin-left: -80%;
+    cursor: pointer;
+  }
+
+  .icons-footer {
+    width: 100%;
+  }
+
+  .div-container {
+    display: none;
+  }
 }
