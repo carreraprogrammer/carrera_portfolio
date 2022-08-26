@@ -731,6 +731,13 @@ footer {
     transition: 0.5s all;
   }
 
+  #desktop-ul li {
+    padding-right: 0.83vw;
+    padding-left: 0.83vw;
+    padding-bottom: 0.69vw;
+    padding-top: 0.69vw;
+  }
+
   #technologies-ul li {
     list-style: none;
   }
@@ -952,14 +959,7 @@ footer {
     gap: 20px;
   }
 
-  #desktop-ul li {
-    padding-right: 0.83vw;
-    padding-left: 0.83vw;
-    padding-bottom: 0.69vw;
-    padding-top: 0.69vw;
-  }
-
-  .see-more-container {
+   .see-more-container {
     width: 22.7vw;
     margin-bottom: 24px;
   }
@@ -999,7 +999,7 @@ footer {
   .project-card:hover {
     transform: scale(1.05, 1.05);
     border: 2px solid #ff6b00;
-  } 
+  }
 
   .card-one {
     background: url(vectors/Img_desktop1.png);
@@ -1090,7 +1090,7 @@ footer {
 
   .link-card-button:hover {
     transform: scale(1.02);
-  }  
+  }
 
   /* Here ends project grid */
 
