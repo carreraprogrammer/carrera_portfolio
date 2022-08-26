@@ -37,8 +37,6 @@
 
 👤 **Ivan Martinez von Halle**
 
-- GitHub: [@ivanmvh](https://github.com/ivanmvh)
-- Twitter: [@imprivado](https://twitter.com/imprivado)
 ​
 ​
 ## �� Contributing
