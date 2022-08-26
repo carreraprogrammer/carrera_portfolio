@@ -385,7 +385,7 @@ main hr {
   padding-bottom: 32px;
 }
 
-.card-tags ul li {
+.card-tags-ul-li {
   height: 100%;
   display: flex;
   align-items: center;
@@ -1048,7 +1048,7 @@ main hr {
     margin-right: 1.1vw;
   }
 
-  #card-tags li {
+  .card-tags-ul-li {
     height: 100%;
     display: flex;
     align-items: center;
