@@ -29,10 +29,15 @@ body {
   word-spacing: 4px;
 }
 
+* .btn {
+  transition: 0.5s all;
+}
+
 * .btn:hover {
   color: var(--red);
   border: 2px solid var(--red);
   background-color: rgb(245, 216, 200);
+  transform: scale(1.1);
 }
 
 * .btn:active {
@@ -67,6 +72,13 @@ body {
   flex: 1;
   align-items: center;
   margin-left: 5%;
+  transition: 0.5s all;
+}
+
+.logo:hover {
+  transform: rotate(15deg);
+  color: #ff6b00;
+  transform: scale(1.05);
 }
 
 .logo-link {
@@ -94,6 +106,10 @@ body {
   color: var(--red);
   height: 1rem;
   align-items: flex-end;
+}
+
+#logo-dat:hover{
+  color: white;
 }
 
 /* Here starts the welcome page */
