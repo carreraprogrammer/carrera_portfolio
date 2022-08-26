@@ -1010,6 +1010,10 @@ header {
   background-size: cover;
 }
 
+.card-link {
+  color: #fff;
+}
+
 .card-title {
   font-weight: 400;
   font-size: 32px;
@@ -1186,6 +1190,7 @@ footer {
   margin-right: 24px;
   text-align: left;
   color:  #262626;
+  max-width: 546px;
 }
 
 .form-name {
@@ -1204,6 +1209,7 @@ footer {
 
 .form-submit {
   margin-left: -80%;
+  cursor: pointer;
 }
 
 .icons-footer {
