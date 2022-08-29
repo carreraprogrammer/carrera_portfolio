@@ -12,6 +12,10 @@
 - Major languages: Html&css
 - Frameworks: Visual studio
 - Technologies used
+
+## Live Demo (if available)
+
+[Live Demo Link](https://carreraprogrammer.github.io/carrera_portfolio/)
 ​
 ## Getting Started
  To get a local copy up and running follow these simple example steps.
