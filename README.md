@@ -68,7 +68,11 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@Mohi_Aghaali](https://twitter.com/Mohi_Aghaali)
 - LinkedIn: [mahdi-aghaali](https://www.linkedin.com/in/mahdi-aghaali/)
   ​
-  ​
+  ​👤 ** Osvaldo Jose Barrios Cortina **
+
+Twitter : @OsvaldoBarrio20
+GitHub : @OsvaldoBC
+LinkedIn: osvaldo-barrios-data-science
 
 ## �� Contributing
 
