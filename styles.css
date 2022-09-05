@@ -115,14 +115,14 @@ body {
 /* Here starts the welcome page */
 
 header {
-  height: 682px;
+  height:100vh;
   background-color: var(--black);
 }
 
 .welcome-section {
   flex-direction: column;
   align-items: center;
-  height: 93%;
+  height: 100vh;
   color: var(--white);
   justify-content: center;
 }
@@ -793,7 +793,7 @@ footer {
 
   .welcome-section {
     flex-direction: row;
-    height: 870px;
+    height: 100vh;
     padding-top: 72px;
     overflow: hidden;
   }
