@@ -52,6 +52,7 @@ body {
 
 * a {
   text-decoration: none;
+  color: white;
 }
 
 .div-flex {
@@ -316,7 +317,7 @@ main hr {
   align-items: center;
   width: 124px;
   height: 48px;
-  color: var(--white);
+  color: var(--black);
   background-color: var(--red);
   border: none;
   margin-top: 12px;
@@ -403,7 +404,7 @@ main hr {
 .link-card-button {
   width: 100%;
   height: 48px;
-  color: var(--white);
+  color: var(--black);
   background-color: var(--red);
   border: none;
   font-weight: 700;
@@ -461,7 +462,7 @@ main hr {
   align-items: center;
   width: 161px;
   height: 48px;
-  color: var(--white);
+  color: var(--black);
   background-color: var(--red);
   border: none;
   margin-top: 24px;
@@ -639,9 +640,9 @@ footer {
   align-items: center;
   padding: 12px;
   gap: 10px;
-  background: #ff6b00;
+  background: var(--red);
   margin-top: 24px;
-  color: white;
+  color: var(--black);
   border: none;
   font-family: 'Inter', sans-serif;
   font-style: normal;
