@@ -75,7 +75,7 @@ body {
 .logo {
   flex: 1;
   align-items: center;
-  margin-left: 5%;
+  margin-left: 4.8vw;
   transition: 0.5s all;
 }
 
@@ -101,23 +101,49 @@ body {
   right: 0;
   background-color: #3C3A39;
   z-index: 2;
-  transform: translate(0, 0);
+  transition: transform 0.5s ease;
+  transform: translate(0, -100%);
 }
 
 .mobile-menu.is-active {
   transform: translate(0,0);
 }
 
-#burguer-menu {
+.burger-menu {
   display: flex;
+  flex-direction: column;
   flex: 1;
   position: fixed;
   right: 4.8vw;
-  top: 4.8vw;
+  top: 4vw;
   align-items: center;
-  justify-content: right;
+  justify-content: center;
   margin-right: 5%;
   z-index: 3;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+
+.burger-bar {
+  height: 2px;
+  margin-bottom: 3px;
+  width: 18px;
+  background-color: var(--white);
+  transition: transform 1s ease-in-out;
+}
+
+.burger-menu.is-active .burger-bar:nth-child(2)  {
+  opacity: 0;
+}
+
+.burger-menu.is-active .burger-bar:nth-child(1)  {
+  transform: translateY(4.8px) rotate(45deg);
+}
+
+.burger-menu.is-active .burger-bar:nth-child(3)  {
+  transform: translateY(-4.8px) rotate(-45deg);
 }
 
 #mobile-ul-menu {
@@ -126,9 +152,7 @@ body {
   width: 100%;
   height: 100%;
   text-align: left;
-  border: 2px solid red;
 }
-
 
 .mobile-li-menu.one {
   margin-top: 20.26vw;
@@ -518,11 +542,10 @@ main hr {
 }
 
 .illustration-about {
+  display: block;
   width: 40%;
-  position: relative;
-  left: 30%;
+  margin-left: 60vw;
   margin-top: -12%;
-  transform: matrix(1, 0, 0, 1, 0, 0);
   margin-bottom: 0;
   order: 0;
 }
@@ -594,6 +617,7 @@ main hr {
 
 #rombus {
   transform: rotate(45deg);
+  z-index: 0;
 }
 
 /* Here starts the contact section */
@@ -823,7 +847,7 @@ footer {
     color: #172b4d;
   }
 
-  #burguer-menu {
+  .burger-menu {
     display: none;
   }
 
@@ -908,6 +932,7 @@ footer {
     max-width: 100%;
     width: 44.7vw;
     height: 43.9vw;
+    max-height: 80%;
     transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
   }
 
@@ -1048,14 +1073,14 @@ footer {
 
   .project-card:hover {
     transform: scale(1.05, 1.05);
-    border: 2px solid #ff6b00;
+    border: 3px solid #ff6b00;
   }
 
   .card-one {
     background: url(vectors/Img_desktop1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    border: 2px solid black;
+    border: 3px solid black;
   }
 
   .card-two {
@@ -1134,8 +1159,11 @@ footer {
   }
 
   .link-card-button {
+    margin-bottom: -0.3%;
     height: 58px;
     background-color: #f55800;
+    border: 3px solid #ff6b00;
+    width: 100%;  
   }
 
   .link-card-button:hover {
