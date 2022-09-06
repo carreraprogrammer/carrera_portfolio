@@ -67,12 +67,15 @@ body {
   height: 48px;
   background-color: var(--gray);
   color: var(--white);
+  position: fixed;
+  left: 0;
+  right: 0;
 }
 
 .logo {
   flex: 1;
   align-items: center;
-  margin-left: 5%;
+  margin-left: 4.8vw;
   transition: 0.5s all;
 }
 
@@ -90,12 +93,81 @@ body {
   display: none;
 }
 
-#burguer-menu {
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #3c3a39;
+  z-index: 2;
+  transition: transform 0.5s ease;
+  transform: translate(0, -100%);
+}
+
+.mobile-menu.is-active {
+  transform: translate(0, 0);
+}
+
+.burger-menu {
   display: flex;
+  flex-direction: column;
   flex: 1;
+  position: fixed;
+  right: 4.8vw;
+  top: 4vw;
   align-items: center;
-  justify-content: right;
+  justify-content: center;
   margin-right: 5%;
+  z-index: 3;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+
+.burger-bar {
+  height: 2px;
+  margin-bottom: 3px;
+  width: 18px;
+  background-color: var(--white);
+  transition: transform 1s ease-in-out;
+}
+
+.burger-menu.is-active .burger-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.is-active .burger-bar:nth-child(1) {
+  transform: translateY(4.8px) rotate(45deg);
+}
+
+.burger-menu.is-active .burger-bar:nth-child(3) {
+  transform: translateY(-4.8px) rotate(-45deg);
+}
+
+#mobile-ul-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+
+.mobile-li-menu.one {
+  margin-top: 20.26vw;
+}
+
+.mobile-li-menu {
+  font-size: 32px;
+  margin-left: 6.5vw;
+  margin-right: 6.5vw;
+  border-bottom: 1px solid #6f6c6b;
+  list-style: none;
+  padding: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
 }
 
 #logo-dat {
@@ -115,7 +187,7 @@ body {
 /* Here starts the welcome page */
 
 header {
-  height:100vh;
+  height: 100vh;
   background-color: var(--black);
 }
 
@@ -159,7 +231,6 @@ header {
   color: #fff;
   line-height: 24px;
   word-spacing: 1px;
-  z-index: 1;
   font-style: normal;
   margin-top: 12px;
 }
@@ -168,7 +239,6 @@ header {
   font-size: 20px;
   width: 85%;
   margin-top: 20px;
-  z-index: 1;
   margin-bottom: 120px;
 }
 
@@ -187,7 +257,6 @@ header {
   left: 15%;
   height: 16vw;
   width: 100%;
-  z-index: 0;
   justify-content: flex-end;
   align-items: flex-end;
   max-height: 100%;
@@ -198,7 +267,6 @@ header {
 }
 
 .vectors {
-  position: relative;
   margin-top: -55%;
   height: 256.89px;
   width: 261.83px;
@@ -448,7 +516,7 @@ main hr {
   font-size: 16px;
   line-height: 24px;
   margin-top: 24px;
-  font-style: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .get-resume-container {
@@ -473,11 +541,10 @@ main hr {
 }
 
 .illustration-about {
+  display: block;
   width: 40%;
-  position: relative;
-  left: 30%;
+  margin-left: 60vw;
   margin-top: -12%;
-  transform: matrix(1, 0, 0, 1, 0, 0);
   margin-bottom: 0;
   order: 0;
 }
@@ -549,6 +616,7 @@ main hr {
 
 #rombus {
   transform: rotate(45deg);
+  z-index: 0;
 }
 
 /* Here starts the contact section */
@@ -698,6 +766,10 @@ footer {
     margin-left: 10%;
   }
 
+  #mobile-menu {
+    display: none;
+  }
+
   #desktop-menu {
     display: flex;
     flex-basis: 50%;
@@ -774,7 +846,7 @@ footer {
     color: #172b4d;
   }
 
-  #burguer-menu {
+  .burger-menu {
     display: none;
   }
 
@@ -855,10 +927,10 @@ footer {
   }
 
   #vectors-illustration-desktop {
-    max-height: 100%;
     max-width: 100%;
     width: 44.7vw;
     height: 43.9vw;
+    max-height: 80%;
     transform: matrix(-0.96, 0.27, 0.27, 0.96, 0, 0);
   }
 
@@ -999,14 +1071,14 @@ footer {
 
   .project-card:hover {
     transform: scale(1.05, 1.05);
-    border: 2px solid #ff6b00;
+    border: 3px solid #ff6b00;
   }
 
   .card-one {
     background: url(vectors/Img_desktop1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    border: 2px solid black;
+    border: 3px solid black;
   }
 
   .card-two {
@@ -1085,8 +1157,11 @@ footer {
   }
 
   .link-card-button {
+    margin-bottom: -0.3%;
     height: 58px;
     background-color: #f55800;
+    border: 3px solid #ff6b00;
+    width: 100%;
   }
 
   .link-card-button:hover {
@@ -1119,7 +1194,7 @@ footer {
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
-    font-style: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
   }
 
   .get-resume-btn {
@@ -1195,7 +1270,6 @@ footer {
     margin: 0;
     margin-right: 9.37vw;
     margin-top: 9.02vw;
-    align-items: left;
   }
 
   .form-title {
