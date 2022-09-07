@@ -13,47 +13,45 @@ document.querySelectorAll('.nav-link').forEach((element) => element.addEventList
   navMenu.classList.remove('is-active');
 }));
 
-//Here I will create the projects array
+//Here I will create the projects array to save the project data //
 
-// In this section I use arrays to save the name, the descrition, the image, the tags and the button-links of each project//
-
-let projectNames = document.getElementsByClassName('card-title')
-let names = [].map.call(projectNames, elem => elem.textContent);
+const projectNames = document.getElementsByClassName('card-title');
+const names = [].map.call(projectNames, (elem) => elem.textContent);
 console.log(names)
-let projectLongDescriptions = document.getElementsByClassName('long-description')
-let longDescription = [].map.call(projectLongDescriptions, elem => elem.textContent);
-let projectImages = document.getElementsByClassName('project-img')
-let projectImage = [].map.call(projectImages, elem => elem.src);
-let projectSeeLive = document.getElementsByClassName('see-live-link')
-let seeLiveLinks = [].map.call(projectSeeLive, elem => elem.href);
-let projectSeeSource = document.getElementsByClassName('see-source-link')
-let seeSourceLinks = [].map.call(projectSeeSource, elem => elem.href);
+const projectLongDescriptions = document.getElementsByClassName('long-description');
+const longDescription = [].map.call(projectLongDescriptions, (elem) => elem.textContent);
+const projectImages = document.getElementsByClassName('project-img');
+const projectImage = [].map.call(projectImages, (elem) => elem.src);
+const projectSeeLive = document.getElementsByClassName('see-live-link');
+const seeLiveLinks = [].map.call(projectSeeLive, (elem) => elem.href);
+const projectSeeSource = document.getElementsByClassName('see-source-link');
+const seeSourceLinks = [].map.call(projectSeeSource, (elem) => elem.href);
 
 // Here I create an array for each project tags and the preview tags
 
-let projectOneTags = document.getElementsByClassName('tags-one');
-let projectTwoTags = document.getElementsByClassName('tags-two');
-let projectThreeTags = document.getElementsByClassName('tags-three');
-let projectFourTags = document.getElementsByClassName('tags-four');
-let projectFiveTags = document.getElementsByClassName('tags-five');
-let projectSixTags = document.getElementsByClassName('tags-six');
+const projectOneTags = document.getElementsByClassName('tags-one');
+const projectTwoTags = document.getElementsByClassName('tags-two');
+const projectThreeTags = document.getElementsByClassName('tags-three');
+const projectFourTags = document.getElementsByClassName('tags-four');
+const projectFiveTags = document.getElementsByClassName('tags-five');
+const projectSixTags = document.getElementsByClassName('tags-six');
 
-let tagsOne = [].map.call(projectOneTags, elem => elem.textContent);
-let tagsTwo = [].map.call(projectTwoTags, elem => elem.textContent);
-let tagsThree = [].map.call(projectThreeTags, elem => elem.textContent);
-let tagsFour = [].map.call(projectFourTags, elem => elem.textContent);
-let tagsFive = [].map.call(projectFiveTags, elem => elem.textContent);
-let tagsSix = [].map.call(projectSixTags, elem => elem.textContent);
+const tagsOne = [].map.call(projectOneTags, elem => elem.textContent);
+const tagsTwo = [].map.call(projectTwoTags, elem => elem.textContent);
+const tagsThree = [].map.call(projectThreeTags, elem => elem.textContent);
+const tagsFour = [].map.call(projectFourTags, elem => elem.textContent);
+const tagsFive = [].map.call(projectFiveTags, elem => elem.textContent);
+const tagsSix = [].map.call(projectSixTags, elem => elem.textContent);
 
 // I will create a function to create li elements //
 
 function createMenuItem(name) {
-  let li = document.createElement('li');
+  const li = document.createElement('li');
   li.textContent = name;
   return li;
 }
 
-let previewTags = document.querySelector('.preview-tags');
+const previewTags = document.querySelector('.preview-tags');
 
 // In this section, I create an Object constructor for each project individually //
 
@@ -68,14 +66,12 @@ function Projects(name, description, img, seeLive, seeSource, tags) {
 
 // In this section, I use the object constructor to create objects of each project //
 
-let projectOne = new Projects(names[0], longDescription[0], projectImage[0], seeLiveLinks[0], seeSourceLinks[0], tagsOne);
-let projectTwo = new Projects(names[1], longDescription[1], projectImage[1], seeLiveLinks[1], seeSourceLinks[1], tagsTwo);
-let projectThree = new Projects(names[2], longDescription[2], projectImage[2], seeLiveLinks[2], seeSourceLinks[2], tagsThree);
-let projectFour = new Projects(names[3], longDescription[3], projectImage[3], seeLiveLinks[3], seeSourceLinks[3], tagsFour);
-let projectFive = new Projects(names[4], longDescription[4], projectImage[4], seeLiveLinks[4],  seeSourceLinks[4], tagsFive);
-let projectSix = new Projects(names[5], longDescription[5], projectImage[5], seeLiveLinks[5], seeSourceLinks[5], tagsSix);
-
-console.log(projectOne);
+const projectOne = new Projects(names[0], longDescription[0], projectImage[0], seeLiveLinks[0], seeSourceLinks[0], tagsOne);
+const projectTwo = new Projects(names[1], longDescription[1], projectImage[1], seeLiveLinks[1], seeSourceLinks[1], tagsTwo);
+const projectThree = new Projects(names[2], longDescription[2], projectImage[2], seeLiveLinks[2], seeSourceLinks[2], tagsThree);
+const projectFour = new Projects(names[3], longDescription[3], projectImage[3], seeLiveLinks[3], seeSourceLinks[3], tagsFour);
+const projectFive = new Projects(names[4], longDescription[4], projectImage[4], seeLiveLinks[4],  seeSourceLinks[4], tagsFive);
+const projectSix = new Projects(names[5], longDescription[5], projectImage[5], seeLiveLinks[5], seeSourceLinks[5], tagsSix);
 
 // Here start the dom for the preview of the projects //
 
@@ -157,10 +153,10 @@ previewx.addEventListener('click', () => {
 
 // Here I create the daily selection tags
 
-let dailyTags = document.getElementsByClassName('daily-tags');
-let dailyBtn = document.querySelector('.see-more-btn');
+const dailyTags = document.getElementsByClassName('daily-tags');
+const dailyBtn = document.querySelector('.see-more-btn');
 
-let tagsZero = [].map.call(dailyTags, elem => elem.textContent)
+const tagsZero = [].map.call(dailyTags, (elem) => elem.textContent)
 
 console.log(tagsZero)
 

@@ -277,9 +277,9 @@ header {
 
 /* Here starts daily selection section */
 
- /* Here start the project preview */
+/* Here start the project preview */
 
- .preview-project {
+.preview-project {
   position: fixed;
   top: 0;
   left: 0;
@@ -287,21 +287,21 @@ header {
   right: 0;
   height: 100vh;
   width: 100%;
-  background-color: #1c1a19c0;
+  background-color: #1c1a19;
   z-index: 1000;
-  transform: translatex(-100%);
+  transform: translateX(-100%);
   transition: transform 0.5s ease;
 }
 
 .preview-project.is-active {
-  transform: translatex(0);
+  transform: translateX(0);
 }
 
 .project-x {
   z-index: 1001;
-  position: fixed; 
+  position: fixed;
   top: 24vw;
-  right: 12.2VW;
+  right: 12.2vw;
   width: 18px;
   height: 18px;
   display: flex;
@@ -313,7 +313,7 @@ header {
   cursor: pointer;
 }
 
-.project-x:hover{
+.project-x:hover {
   background-color: var(--red);
 }
 
@@ -354,11 +354,11 @@ header {
 
 .tags.project-content {
   margin-top: 30px;
-  margin-left: 16px; 
+  margin-left: 16px;
   margin-right: 16px;
 }
 
-.main-preview-project{
+.main-preview-project {
   height: 75.2%;
   width: 100%;
   align-items: center;
@@ -398,7 +398,7 @@ header {
   margin-top: 24px;
 }
 
-.preview-container-btns{
+.preview-container-btns {
   margin-top: 5%;
   width: 100%;
 }
@@ -408,10 +408,10 @@ header {
   width: 134px;
   height: 48px;
   padding: 12px;
-  background: #F55800;
+  background: #f55800;
   border: none;
-  color: var(--white);   
-  font-family: 'Inter';
+  color: var(--white);  
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -580,9 +580,9 @@ main hr {
   justify-content: flex-end;
 }
 
-.first-card{
-display: none;
-} 
+.first-card {
+  display: none;
+}
 
 .card-one {
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(Projects/Project_1.png);
@@ -1139,13 +1139,13 @@ footer {
     transition: transform 0.5s ease-in-out;
   }
 
-  .preview-project.is-active{
+  .preview-project.is-active {
     transform: translateX(0);
   }
 
   .project-x {
     z-index: 1001;
-    position: fixed; 
+    position: fixed;
     top: 10.4vw;
     right: 12.5vw;
     width: 18px;
@@ -1159,7 +1159,7 @@ footer {
     cursor: pointer;
   }
 
-  .project-x:hover{
+  .project-x:hover {
     background-color: var(--red);
   }
 
@@ -1173,11 +1173,11 @@ footer {
   .project-bar.two {
     transform: translateY(-8px) rotate(45deg);
   }
-  
+
   .project-bar.one {
     transform: translateY(8px) rotate(-45deg);
   }
-  
+
   .preview-project-content {
     background-color: var(--white);
     position: fixed;
@@ -1186,11 +1186,11 @@ footer {
     right: 9.8vw;
     left: 9.8vw;
   }
-  
+
   .preview-project-title {
     margin-top: 24px;
     margin-left: 24px;
-    font-family: 'Crete Round';
+    font-family: 'Crete Round', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -1203,7 +1203,7 @@ footer {
     margin-left: 24px;
   }
 
-  .main-preview-project{
+  .main-preview-project {
     height: 75.2%;
     width: 100%;
     align-items: center;
@@ -1241,7 +1241,7 @@ footer {
     margin-right: 24px;
   }
 
-  .preview-container-btns{
+  .preview-container-btns {
     margin-top: 7%;
   }
 
@@ -1249,10 +1249,10 @@ footer {
     margin-left: 25px;
     width: 134px;
     height: 48px;
-    background: #F55800;
+    background: #f55800;
     border: none;
-    color: var(--white);   
-    font-family: 'Inter';
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
@@ -1261,7 +1261,7 @@ footer {
   }
 
   /* Here ends the project preview */
-  
+
   .works {
     padding-top: 135px;
     align-items: center;
@@ -1406,32 +1406,32 @@ footer {
   }
 
   .card-two {
-    background:  linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(Projects/Project_2.png);
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(Projects/Project_2.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .card-three {
-    background:  linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(Projects/Project_3.jpg);
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(Projects/Project_3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .card-four {
-    background:  linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(Projects/Project_4.jpg);
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(Projects/Project_4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .card-five {
-    background:  linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(Projects/Project_5.png);
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(Projects/Project_5.png);
     background-position-x: 70%;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .card-six {
-    background:  linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(Projects/Project_6.png);
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(Projects/Project_6.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
