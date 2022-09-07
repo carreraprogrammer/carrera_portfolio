@@ -152,7 +152,7 @@ previewx.addEventListener('click', () => {
   previewProject.classList.remove('is-active');
   setTimeout(() => {
     document.location.reload();
-  }, 800);
+  }, 0);
 });
 
 // Here I create the daily selection tags
