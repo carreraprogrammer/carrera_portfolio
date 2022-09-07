@@ -372,6 +372,7 @@ header {
   width: 84vw;
   height: 59vw;
   flex-basis: 40%;
+  border: 2px solid black;
 }
 
 .preview-card-description {
@@ -584,8 +585,30 @@ display: none;
 } 
 
 .card-one {
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(vectors/Img_Placeholder.png);
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(Projects/Project_1.png);
 }
+
+.card-two {
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(Projects/Project_2.png);
+}
+
+.card-three {
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(Projects/Project_3.jpg);
+}
+
+.card-four {
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(Projects/Project_4.jpg);
+}
+
+.card-five {
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(Projects/Project_5.jpg);
+}
+
+.card-six {
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(Projects/Project_6.png);
+}
+
+
 
 .card-title {
   font-weight: 400;
@@ -1186,7 +1209,7 @@ footer {
     height: 75.2%;
     width: 100%;
     align-items: center;
-    margin-top: 24px;
+    margin-top: 0;
     flex-direction: row;
   }
 
@@ -1378,38 +1401,39 @@ footer {
   }
 
   .card-one {
-    background: url(vectors/Img_desktop1.png);
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(Projects/Project_1.png);
     background-repeat: no-repeat;
     background-size: cover;
     border: 3px solid black;
   }
 
   .card-two {
-    background: url(vectors/Img_desktop2.png);
+    background:  linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(Projects/Project_2.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .card-three {
-    background: url(vectors/Img_desktop3.png);
+    background:  linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(Projects/Project_3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .card-four {
-    background: url(vectors/Img_desktop4.png);
+    background:  linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(Projects/Project_4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .card-five {
-    background: url(vectors/Img_desktop2.png);
+    background:  linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(Projects/Project_5.png);
+    background-position-x: 70%;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .card-six {
-    background: url(vectors/Img_desktop3.png);
+    background:  linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(Projects/Project_6.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
