@@ -541,6 +541,14 @@ main hr {
 
 /* Here starts project grid */
 
+.long-description {
+  display: none;
+}
+
+.project-img {
+  display: none;
+}
+
 .projects-grid {
   width: 327px;
   display: grid;
@@ -561,6 +569,10 @@ main hr {
   align-items: center;
   justify-content: flex-end;
 }
+
+.first-card{
+display: none;
+} 
 
 .card-one {
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(vectors/Img_Placeholder.png);
