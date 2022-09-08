@@ -66,17 +66,17 @@ function Projects(name, description, img, seeLive, seeSource, tags) {
 // In this section, I use the object constructor to create objects of each project //
 
 const projectOne = new Projects(names[0], longDescription[0], projectImage[0],
-seeLiveLinks[0], seeSourceLinks[0], tagsOne);
-const projectTwo = new Projects(names[1], longDescription[1], projectImage[1], 
-seeLiveLinks[1], seeSourceLinks[1], tagsTwo);
-const projectThree = new Projects(names[2], longDescription[2], projectImage[2], 
-seeLiveLinks[2], seeSourceLinks[2], tagsThree);
-const projectFour = new Projects(names[3], longDescription[3], projectImage[3], 
-seeLiveLinks[3], seeSourceLinks[3], tagsFour);
-const projectFive = new Projects(names[4], longDescription[4], projectImage[4], 
-seeLiveLinks[4],  seeSourceLinks[4], tagsFive);
-const projectSix = new Projects(names[5], longDescription[5], projectImage[5], 
-seeLiveLinks[5], seeSourceLinks[5], tagsSix);
+  seeLiveLinks[0], seeSourceLinks[0], tagsOne);
+const projectTwo = new Projects(names[1], longDescription[1], projectImage[1],
+  seeLiveLinks[1], seeSourceLinks[1], tagsTwo);
+const projectThree = new Projects(names[2], longDescription[2], projectImage[2],
+  seeLiveLinks[2], seeSourceLinks[2], tagsThree);
+const projectFour = new Projects(names[3], longDescription[3], projectImage[3],
+  seeLiveLinks[3], seeSourceLinks[3], tagsFour);
+const projectFive = new Projects(names[4], longDescription[4], projectImage[4],
+  seeLiveLinks[4],  seeSourceLinks[4], tagsFive);
+const projectSix = new Projects(names[5], longDescription[5], projectImage[5],
+  seeLiveLinks[5], seeSourceLinks[5], tagsSix);
 
 // Here start the dom for the preview of the projects //
 
@@ -103,7 +103,7 @@ previewBtn.forEach((element) => element.addEventListener('click', () => {
     document.querySelector('.preview-project-img').src = projectTwo.projectImage;
     document.querySelector('.preview-see-live').href = projectTwo.seeLive;
     document.querySelector('.preview-see-source').href = projectTwo.seeSource;
-    for (let i = 0; i < tagsTwo.length; i++) {
+    for (let i = 0; i < tagsTwo.length; i += 1) {
       previewTags.appendChild(createMenuItem(tagsTwo[i]));
       };
   } else if (element.classList.contains('project-three')) {
@@ -125,7 +125,7 @@ previewBtn.forEach((element) => element.addEventListener('click', () => {
     document.querySelector('.preview-see-source').href = projectFour.seeSource;
     for (let i = 0; i < tagsFour.length; i++) {
       previewTags.appendChild(createMenuItem(tagsFour[i]));
-      };
+    }
   } else if (element.classList.contains('project-five')) {
     document.querySelector('.preview-project-title').textContent = projectFive.name;
     document.querySelector('.preview-card-p').textContent = projectFive.longDescription;
@@ -135,7 +135,7 @@ previewBtn.forEach((element) => element.addEventListener('click', () => {
     document.querySelector('.preview-see-source').href = projectFive.seeSource;
     for (let i = 0; i < tagsFive.length; i += 1) {
       previewTags.appendChild(createMenuItem(tagsFive[i]));
-      };
+    }
   } else if (element.classList.contains('project-six')) {
     document.querySelector('.preview-project-title').textContent = projectSix.name;
     document.querySelector('.preview-card-p').textContent = projectSix.longDescription;
@@ -145,9 +145,9 @@ previewBtn.forEach((element) => element.addEventListener('click', () => {
     document.querySelector('.preview-see-source').href = projectSix.seeSource;
     for (let i = 0; i < tagsSix.length; i += 1) {
       previewTags.appendChild(createMenuItem(tagsSix[i]));
-      };
+    }
   }
-})); 
+}));
 
 previewx.addEventListener('click', () => {
   previewProject.classList.remove('is-active');
@@ -166,5 +166,5 @@ const tagsZero = [].map.call(dailyTags, (elem) => elem.textContent);
 dailyBtn.addEventListener('click', () => {
   for (let i = 0; i < tagsZero.length; i += 1) {
     previewTags.appendChild(createMenuItem(tagsZero[i]));
-  };
+  }
 });
