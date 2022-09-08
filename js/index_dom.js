@@ -74,7 +74,7 @@ const projectThree = new Projects(names[2], longDescription[2], projectImage[2],
 const projectFour = new Projects(names[3], longDescription[3], projectImage[3],
   seeLiveLinks[3], seeSourceLinks[3], tagsFour);
 const projectFive = new Projects(names[4], longDescription[4], projectImage[4],
-  seeLiveLinks[4],  seeSourceLinks[4], tagsFive);
+  seeLiveLinks[4], seeSourceLinks[4], tagsFive);
 const projectSix = new Projects(names[5], longDescription[5], projectImage[5],
   seeLiveLinks[5], seeSourceLinks[5], tagsSix);
 
@@ -105,7 +105,7 @@ previewBtn.forEach((element) => element.addEventListener('click', () => {
     document.querySelector('.preview-see-source').href = projectTwo.seeSource;
     for (let i = 0; i < tagsTwo.length; i += 1) {
       previewTags.appendChild(createMenuItem(tagsTwo[i]));
-      };
+    }
   } else if (element.classList.contains('project-three')) {
     document.querySelector('.preview-project-title').textContent = projectThree.name;
     document.querySelector('.preview-card-p').textContent = projectThree.longDescription;
@@ -115,7 +115,7 @@ previewBtn.forEach((element) => element.addEventListener('click', () => {
     document.querySelector('.preview-see-source').href = projectThree.seeSource;
     for (let i = 0; i < tagsThree.length; i += 1) {
       previewTags.appendChild(createMenuItem(tagsThree[i]));
-      };
+    }
   } else if (element.classList.contains('project-four')) {
     document.querySelector('.preview-project-title').textContent = projectFour.name;
     document.querySelector('.preview-card-p').textContent = projectFour.longDescription;
@@ -123,7 +123,7 @@ previewBtn.forEach((element) => element.addEventListener('click', () => {
     document.querySelector('.preview-project-img').src = projectFour.projectImage;
     document.querySelector('.preview-see-live').href = projectFour.seeLive;
     document.querySelector('.preview-see-source').href = projectFour.seeSource;
-    for (let i = 0; i < tagsFour.length; i++) {
+    for (let i = 0; i < tagsFour.length; i += 1) {
       previewTags.appendChild(createMenuItem(tagsFour[i]));
     }
   } else if (element.classList.contains('project-five')) {
