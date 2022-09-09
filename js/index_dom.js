@@ -13,7 +13,7 @@ document.querySelectorAll('.nav-link').forEach((element) => element.addEventList
   navMenu.classList.remove('is-active');
 }));
 
-// Here I will create the projects array to save the project data //
+/* Here I will create the projects array to save the project data 
 
 const projectNames = document.getElementsByClassName('card-title');
 const names = [].map.call(projectNames, (elem) => elem.textContent);
@@ -41,6 +41,8 @@ const tagsThree = [].map.call(projectThreeTags, (elem) => elem.textContent);
 const tagsFour = [].map.call(projectFourTags, (elem) => elem.textContent);
 const tagsFive = [].map.call(projectFiveTags, (elem) => elem.textContent);
 const tagsSix = [].map.call(projectSixTags, (elem) => elem.textContent);
+
+
 
 // I will create a function to create li elements //
 
@@ -77,6 +79,7 @@ const projectFive = new Projects(names[4], longDescription[4], projectImage[4],
   seeLiveLinks[4], seeSourceLinks[4], tagsFive);
 const projectSix = new Projects(names[5], longDescription[5], projectImage[5],
   seeLiveLinks[5], seeSourceLinks[5], tagsSix);
+
 
 // Here start the dom for the preview of the projects //
 
@@ -167,4 +170,4 @@ dailyBtn.addEventListener('click', () => {
   for (let i = 0; i < tagsZero.length; i += 1) {
     previewTags.appendChild(createMenuItem(tagsZero[i]));
   }
-});
+}); */
