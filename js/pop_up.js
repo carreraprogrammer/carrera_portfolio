@@ -63,40 +63,39 @@ const projectsInformation = [
     seeSource: 'https://carreraprogrammer.github.io/carrera_portfolio/',
     tags: ['html', 'Bootstrap', 'Ruby'],
   },
-  
-]
-  
+];
+
   // I will create the structure of each project card
   
-  const projectCardStructure = projectsInformation.map((project) => `
+const projectCardStructure = projectsInformation.map((project) => `
+  
+  <div class='project-card card-${project.id} div-flex'>
     
-    <div class='project-card card-${project.id} div-flex'>
-      
-      <h3 class='card-title'>${project.name}</h3>
-  
-      <p class='card-description'>${project.abstract}</p>
-  
-      <p class='long-description long-description-one'>${project.longDescription}</p>
-  
-      <img 
-          class='project-img' 
-          src='${project.seeLive}' alt='Project Image'
-      />
-  
-      <a class='see-live-link' href= '${project.seeLive}'></a>
-  
-      <a class='see-source-link' href='$'></a>
-  
-      <ul id='card-tags' class='card-tags div-flex'>
-        ${project.tags.map((tech) => `<li class="card-tags-ul-li tags-one div-flex">${tech}</li>`).join('')}
-      </ul>
-  
-      <a class="preview-btn btn link-card-button div-flex project-${project.id}">See Project</a>
-  
-  </div>
-  `);
+    <h3 class='card-title'>${project.name}</h3>
 
-  const projectCardStructureDesktop = projectsInformation.map((project) => `
+    <p class='card-description'>${project.abstract}</p>
+
+    <p class='long-description long-description-one'>${project.longDescription}</p>
+
+    <img 
+        class='project-img' 
+        src='${project.seeLive}' alt='Project Image'
+    />
+
+    <a class='see-live-link' href= '${project.seeLive}'></a>
+
+    <a class='see-source-link' href='$'></a>
+
+    <ul id='card-tags' class='card-tags div-flex'>
+      ${project.tags.map((tech) => `<li class="card-tags-ul-li tags-one div-flex">${tech}</li>`).join('')}
+    </ul>
+
+    <a class="preview-btn btn link-card-button div-flex project-${project.id}">See Project</a>
+
+</div>
+`);
+
+const projectCardStructureDesktop = projectsInformation.map((project) => `
  
   <div class="project-card card-${project.id} div-flex">
 
@@ -122,19 +121,18 @@ const projectsInformation = [
 
 
   
-  const gridProjectsMobile = document.querySelector('.projects-grid');
-  const gridProjectsDesktop = document.querySelector('.projects-grid-desktop');
-  const parser = new DOMParser();
+const gridProjectsMobile = document.querySelector('.projects-grid');
+const gridProjectsDesktop = document.querySelector('.projects-grid-desktop');
+const parser = new DOMParser();
 
 
 // HERE I DISPLAY THE PROJECTS CARD STRUCTURE FOR DESKTOP
   
- projectCardStructureDesktop.forEach((projectString, index) => {
+projectCardStructureDesktop.forEach((projectString, index) => {
 
-    const projectCardDesktop = parser.parseFromString(projectString, 'text/html').body.firstChild;
-
+  const projectCardDesktop = parser.parseFromString(projectString, 'text/html').body.firstChild;  
      
-    const desktopPopup = 
+  const desktopPopup = 
     `
     <section class="preview-project">
       <button class="project-x">
@@ -172,92 +170,88 @@ const projectsInformation = [
 
     ` 
   
-    const previewPopup = parser.parseFromString(desktopPopup , 'text/html').body.firstChild;
-    const portfolio =  document.querySelector('#portfolio'); 
-    const previewx = previewPopup.querySelector('.project-x');
-    const previewBtn = projectCardDesktop.querySelector('.preview-btn');
-    const previewBtn2 = projectCardDesktop.querySelector('.preview-btn2');
+  const previewPopup = parser.parseFromString(desktopPopup , 'text/html').body.firstChild;
+  const portfolio =  document.querySelector('#portfolio'); 
+  const previewx = previewPopup.querySelector('.project-x');
+  const previewBtn = projectCardDesktop.querySelector('.preview-btn');
+  const previewBtn2 = projectCardDesktop.querySelector('.preview-btn2');
     
-    previewBtn.addEventListener('click', () => {
-        previewPopup.classList.toggle('is-active');
-    });
+  previewBtn.addEventListener('click', () => {
+      previewPopup.classList.toggle('is-active');
+  });  
 
-    previewBtn2.addEventListener('click', () => {
-        previewPopup.classList.toggle('is-active');
-    });
+  previewBtn2.addEventListener('click', () => {
+      previewPopup.classList.toggle('is-active');
+  });
 
-    previewx.addEventListener('click', () => {
-        previewPopup.classList.toggle('is-active');
-    })
+  previewx.addEventListener('click', () => {
+      previewPopup.classList.toggle('is-active');
+  })
 
+  portfolio.append(previewPopup);
 
-    
-    portfolio.append(previewPopup);
-
-    gridProjectsDesktop.append(projectCardDesktop);
+  gridProjectsDesktop.append(projectCardDesktop);
  });
 
 
 // HERE I DISPLAY THE POP UP FOR MOBILE
 
- projectCardStructure.forEach((projectString, index) => {
+projectCardStructure.forEach((projectString, index) => {
 
-   const projectCard = parser.parseFromString(projectString, 'text/html').body.firstChild;
+  const projectCard = parser.parseFromString(projectString, 'text/html').body.firstChild;  
+  const Popup = 
+  `
+  <section class="preview-project">
+    <button class="project-x">
+      <span class="project-bar one"></span>
+      <span class="project-bar two"></span>
+    </button>
+    
+    <div class="preview-project-content">
+    
+      <h1 class="preview-project-title">${projectsInformation[index].name}</h1>
+    
+    <ul class="preview-tags tags project-content div-flex">
+       ${projectsInformation[index].tags.map((tech) => `<li class="card-tags-ul-li div-flex">${tech}</li>`).join('')}
+    </ul>
+    
+    <div class="main-preview-project div-flex">
+    
+        <img class="preview-project-img" src="${projectsInformation[index].image}" alt="preview-project">
+    
+        <div class="preview-card-description div-flex">
+    
+            <p class="mobile-preview-card-p">${projectsInformation[index].longDescription}</p>
+    
+        <div class="preview-container-btns">
+    
+            <a class="btn preview-project-btn preview-see-live" href="${projectsInformation[index].seeLive}" target="_blank" rel="noopener">See-live<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    
+            <a class="btn preview-project-btn preview-see-source" href="${projectsInformation[index].seeSource}" target="_blank" rel="no" target="_blank" rel="noopener">See-source <i class="fa-brands fa-github-alt"></i></a>
+    
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>  
+  ` 
+  
+  const mobilePopup = parser.parseFromString(Popup , 'text/html').body.firstChild;
+  const portfolio =  document.querySelector('#portfolio'); 
+  const previewx = mobilePopup.querySelector('.project-x');
+  const previewBtn = projectCard.querySelector('.preview-btn');
+  
+  previewBtn.addEventListener('click', () => {
+      mobilePopup.classList.toggle('is-active');
+  });
 
-   const Popup = 
-   `
-   <section class="preview-project">
-     <button class="project-x">
-       <span class="project-bar one"></span>
-       <span class="project-bar two"></span>
-     </button>
-     
-     <div class="preview-project-content">
-     
-       <h1 class="preview-project-title">${projectsInformation[index].name}</h1>
-     
-     <ul class="preview-tags tags project-content div-flex">
-        ${projectsInformation[index].tags.map((tech) => `<li class="card-tags-ul-li div-flex">${tech}</li>`).join('')}
-     </ul>
-     
-     <div class="main-preview-project div-flex">
-     
-         <img class="preview-project-img" src="${projectsInformation[index].image}" alt="preview-project">
-     
-         <div class="preview-card-description div-flex">
-     
-             <p class="mobile-preview-card-p">${projectsInformation[index].longDescription}</p>
-     
-         <div class="preview-container-btns">
-     
-             <a class="btn preview-project-btn preview-see-live" href="${projectsInformation[index].seeLive}" target="_blank" rel="noopener">See-live<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-     
-             <a class="btn preview-project-btn preview-see-source" href="${projectsInformation[index].seeSource}" target="_blank" rel="no" target="_blank" rel="noopener">See-source <i class="fa-brands fa-github-alt"></i></a>
-     
-         </div>
-       </div>
-     </div>
-     </div>
-   </section>
-
-   ` 
- 
-   const mobilePopup = parser.parseFromString(Popup , 'text/html').body.firstChild;
-   const portfolio =  document.querySelector('#portfolio'); 
-   const previewx = mobilePopup.querySelector('.project-x');
-   const previewBtn = projectCard.querySelector('.preview-btn');
-   
-   previewBtn.addEventListener('click', () => {
+  previewx.addEventListener('click', () => {
        mobilePopup.classList.toggle('is-active');
-   });
+  })
 
-   previewx.addEventListener('click', () => {
-       mobilePopup.classList.toggle('is-active');
-   })
+  portfolio.append(mobilePopup);
 
-   portfolio.append(mobilePopup);
-
-   gridProjectsMobile.append(projectCard);
+  gridProjectsMobile.append(projectCard);
    
 })
 
