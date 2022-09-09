@@ -2,76 +2,75 @@
 
 const projectsInformation = [
 
-    {
-      id: "one",
-      firstCard: 'first-card',
-      name: 'Project One',
-      longDescription: 'This is the long description for the PROJECT ONE Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita rem quidem maiores. Amet necessitatibus neque architecto quis, eaque corporis nihil. Tenetur magni libero accusamus. Perferendis voluptate ducimus possimus eveniet deserunt. lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita rem quidem maiores. Amet necessitatibus neque architecto quis, eaque corporis nihil',
-      abstract: 'This is the abstract description of the PROJECT ONE Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-      image: 'Projects/Project_1.png',
-      seeLive: 'https://www.freecodecamp.org/certification/fccde5c…ac5b-4ee7-91c7-386adbe10dcd/responsive-web-design',
-      seeSource: 'https://www.freecodecamp.org/certification/fccde5c1dbd-ac5b-4ee7-91c7-386adbe10dcd/responsive-web-design',
-      tags: ['html', 'Css']
-    },
+  {
+    id: "one",
+    firstCard: 'first-card',
+    name: 'Project One',
+    longDescription: 'This is the long description for the PROJECT ONE Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita rem quidem maiores. Amet necessitatibus neque architecto quis, eaque corporis nihil. Tenetur magni libero accusamus. Perferendis voluptate ducimus possimus eveniet deserunt. lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita rem quidem maiores. Amet necessitatibus neque architecto quis, eaque corporis nihil',
+    abstract: 'This is the abstract description of the PROJECT ONE Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    image: 'Projects/Project_1.png',
+    seeLive: 'https://www.freecodecamp.org/certification/fccde5c…ac5b-4ee7-91c7-386adbe10dcd/responsive-web-design',
+    seeSource: 'https://www.freecodecamp.org/certification/fccde5c1dbd-ac5b-4ee7-91c7-386adbe10dcd/responsive-web-design',
+    tags: ['html', 'Css']
+  },
+
+  {
+    id: 'two',
+    name: 'Project Two',
+    longDescription: 'This is the long description for the PROJECT Two Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita rem quidem maiores. Amet necessitatibus neque architecto quis, eaque corporis nihil. Tenetur magni libero accusamus. Perferendis voluptate ducimus possimus eveniet deserunt. lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita rem quidem maiores. Amet necessitatibus neque architecto quis, eaque corporis nihil',
+    abstract: 'This is the abstract description of the PROJECT TWO Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    image: 'Projects/Project_2.png',
+    seeLive: 'https://carreraprogrammer.github.io/carreraprogrammerportfolio/',
+    seeSource: 'https://github.com/carreraprogrammer/carreraprogrammerportfolio',
+    tags: ['html', 'Bootstrap', 'Ruby'],
+  },
+
+  {
+    id: 'three',
+    name: 'Project Three',
+    longDescription: 'This is the long description for the PROJECT FOUR Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita rem quidem maiores. Amet necessitatibus neque architecto quis, eaque corporis nihil. Tenetur magni libero accusamus. Perferendis voluptate ducimus possimus eveniet deserunt. lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita rem quidem maiores.',
+    abstract: 'This is the abstract description of the PROJECT THREE Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    image: 'Projects/Project_3.jpg',
+    seeLive: 'https://carreraprogrammer.github.io/Moneta-ecommerce/',
+    seeSource: 'https://github.com/carreraprogrammer/Moneta-ecommerce',
+    tags: ['html', 'Bootstrap', 'Ruby'],
+  },
+
   
-    {
-      id: 'two',
-      name: 'Project Two',
-      longDescription: 'This is the long description for the PROJECT Two Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita rem quidem maiores. Amet necessitatibus neque architecto quis, eaque corporis nihil. Tenetur magni libero accusamus. Perferendis voluptate ducimus possimus eveniet deserunt. lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita rem quidem maiores. Amet necessitatibus neque architecto quis, eaque corporis nihil',
-      abstract: 'This is the abstract description of the PROJECT TWO Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-      image: 'Projects/Project_2.png',
-      seeLive: 'https://carreraprogrammer.github.io/carreraprogrammerportfolio/',
-      seeSource: 'https://github.com/carreraprogrammer/carreraprogrammerportfolio',
-      tags: ['html', 'Bootstrap', 'Ruby'],
-    },
-  
-    {
-      id: 'three',
-      name: 'Project Three',
-      longDescription: 'This is the long description for the PROJECT FOUR Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita rem quidem maiores. Amet necessitatibus neque architecto quis, eaque corporis nihil. Tenetur magni libero accusamus. Perferendis voluptate ducimus possimus eveniet deserunt. lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita rem quidem maiores.',
-      abstract: 'This is the abstract description of the PROJECT THREE Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-      image: 'Projects/Project_3.jpg',
-      seeLive: 'https://carreraprogrammer.github.io/Moneta-ecommerce/',
-      seeSource: 'https://github.com/carreraprogrammer/Moneta-ecommerce',
-      tags: ['html', 'Bootstrap', 'Ruby'],
-    },
+  {
+    id: 'four',
+    name: 'Project Four',
+    longDescription: 'This is the long description for the PROJECT FOUR Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita rem quidem maiores. Amet necessitatibus neque architecto quis, eaque corporis nihil. Tenetur magni libero accusamus. Perferendis voluptate ducimus possimus eveniet deserunt. lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita rem quidem maiores. Amet necessitatibus neque architecto quis, eaque corporisIdeo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Morbi quidem maiores. Lorem ipsum dolor sit',
+    abstract: 'This is the abstract description of the PROJECT FOUR Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    image: 'Projects/Project_4.jpg',
+    seeLive: 'https://carreraprogrammer.github.io/Moneta-ecommerce/',
+    seeSource: 'https://github.com/carreraprogrammer/Moneta-ecommerce',
+    tags: ['html', 'Bootstrap', 'Ruby'],
+  },
   
   
-    {
-      id: 'four',
-      name: 'Project Four',
-      longDescription: 'This is the long description for the PROJECT FOUR Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita rem quidem maiores. Amet necessitatibus neque architecto quis, eaque corporis nihil. Tenetur magni libero accusamus. Perferendis voluptate ducimus possimus eveniet deserunt. lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita rem quidem maiores. Amet necessitatibus neque architecto quis, eaque corporisIdeo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Morbi quidem maiores. Lorem ipsum dolor sit',
-      abstract: 'This is the abstract description of the PROJECT FOUR Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-      image: 'Projects/Project_4.jpg',
-      seeLive: 'https://carreraprogrammer.github.io/Moneta-ecommerce/',
-      seeSource: 'https://github.com/carreraprogrammer/Moneta-ecommerce',
-      tags: ['html', 'Bootstrap', 'Ruby'],
-    },
+  {
+    id: 'five',
+    name: 'Project Five',
+    longDescription: 'This is the long description for the PROJECT FIVE Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita rem quidem maiores. Amet necessitatibus neque architecto quis, eaque corporis nihil. Tenetur magni libero accusamus. Perferendis voluptate ducimus possimus eveniet deserunt. lorem ipsum dolor sit amet consectetur adipisicing elit. Morbi sed    diam nonumy euismod tempor  incididunt ut labore et dolore magna aliquyam erat, sed diam nonumy euismod et dolore magna aliquyam erat. Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    abstract: 'This is the abstract description of the PROJECT FIVE Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    image: 'Projects/Project_5.png',
+    seeLive: 'https://www.freecodecamp.org/certification/fccde5c1dbd-ac5b-4ee7-91c7-386adbe10dcd/responsive-web-design',
+    seeSource: 'https://www.freecodecamp.org/certification/fccde5c1dbd-ac5b-4ee7-91c7-386adbe10dcd/responsive-web-design',
+    tags: ['html', 'Bootstrap', 'Ruby'],
+  },
   
-  
-    {
-      id: 'five',
-      name: 'Project Five',
-      longDescription: 'This is the long description for the PROJECT FIVE Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita rem quidem maiores. Amet necessitatibus neque architecto quis, eaque corporis nihil. Tenetur magni libero accusamus. Perferendis voluptate ducimus possimus eveniet deserunt. lorem ipsum dolor sit amet consectetur adipisicing elit. Morbi sed    diam nonumy euismod tempor  incididunt ut labore et dolore magna aliquyam erat, sed diam nonumy euismod et dolore magna aliquyam erat. Lorem ipsum dolor sit amet consectetur adipisicing elit',
-      abstract: 'This is the abstract description of the PROJECT FIVE Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-      image: 'Projects/Project_5.png',
-      seeLive: 'https://www.freecodecamp.org/certification/fccde5c1dbd-ac5b-4ee7-91c7-386adbe10dcd/responsive-web-design',
-      seeSource: 'https://www.freecodecamp.org/certification/fccde5c1dbd-ac5b-4ee7-91c7-386adbe10dcd/responsive-web-design',
-      tags: ['html', 'Bootstrap', 'Ruby'],
-    },
-  
-    {
-      id: 'six',
-      name: 'Project Six',
-      longDescription: 'This is the long description for the PROJECT SIX Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita rem quidem maiores. Amet necessitatibus neque architecto quis, eaque corporis nihil. Tenetur magni libero accusamus. Perferendis voluptate ducimus possimus eveniet deserunt. lorem ipsum dolor sit amet consectetur adipisicing elit. Morbi sed diam nonumy euismod tempor  incididunt ut labore et dolore magna aliquyam er.',
-      abstract: 'This is the abstract description of the PROJECT SIX Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-      image: 'Projects/Project_6.png',
-      seeLive: 'https://carreraprogrammer.github.io/carrera_portfolio/',
-      seeSource: 'https://carreraprogrammer.github.io/carrera_portfolio/',
-      tags: ['html', 'Bootstrap', 'Ruby'],
-    },
-  
-  ]
+  {
+    id: 'six',
+    name: 'Project Six',
+    longDescription: 'This is the long description for the PROJECT SIX Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita rem quidem maiores. Amet necessitatibus neque architecto quis, eaque corporis nihil. Tenetur magni libero accusamus. Perferendis voluptate ducimus possimus eveniet deserunt. lorem ipsum dolor sit amet consectetur adipisicing elit. Morbi sed diam nonumy euismod tempor  incididunt ut labore et dolore magna aliquyam er.',
+    abstract: 'This is the abstract description of the PROJECT SIX Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    image: 'Projects/Project_6.png',
+    seeLive: 'https://carreraprogrammer.github.io/carrera_portfolio/',
+    seeSource: 'https://carreraprogrammer.github.io/carrera_portfolio/',
+    tags: ['html', 'Bootstrap', 'Ruby'],
+  },
+]
   
   // I will create the structure of each project card
   
