@@ -3,7 +3,7 @@
 const projectsInformation = [
 
   {
-    id: "one",
+    id: 'one',
     firstCard: 'first-card',
     name: 'Project One',
     longDescription: 'This is the long description for the PROJECT ONE Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita rem quidem maiores. Amet necessitatibus neque architecto quis, eaque corporis nihil. Tenetur magni libero accusamus. Perferendis voluptate ducimus possimus eveniet deserunt. lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita rem quidem maiores. Amet necessitatibus neque architecto quis, eaque corporis nihil',
