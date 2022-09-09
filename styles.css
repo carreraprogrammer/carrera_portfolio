@@ -943,10 +943,12 @@ input:focus.invalid {
   padding: 0;
   font-size: 1rem;
   color: var(--white);
-  background-color: #ff6b00;
-  border-radius: 0 0 20px 0;
+  color: #ff6b00;
   width: 100%;
+  background-color: var(--white);
+  border-radius: 5px;
   box-sizing: border-box;
+  margin-top: 12px;
 }
 
 .error.active {

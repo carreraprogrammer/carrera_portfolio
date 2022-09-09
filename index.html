@@ -319,10 +319,11 @@
         <form class="contact-form div-flex" action="https://formspree.io/f/mzbwzeen" method="POST">
             <input type="text" class="form-name" name="full-name" placeholder="Full name" required maxlength="30">
             <input type="email" id="email" class="form-email" name="email" placeholder="Email address" required>
-            <span class="error" aria-live="polite"></span>
+            
             <textarea class="form-message" name="message" placeholder="Enter text here" required
                 maxlength="500"></textarea>
-            <input type="submit" class="form-submit btn div-flex" value="Get in touch">
+              <input type="submit" class="form-submit btn div-flex" value="Get in touch">
+              <span id='error' class="error" aria-live="polite"></span>
         </form>
     </footer>
     <div class="icons-footer div-flex">
