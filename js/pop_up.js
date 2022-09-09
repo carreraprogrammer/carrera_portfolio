@@ -124,11 +124,11 @@ const gridProjectsDesktop = document.querySelector('.projects-grid-desktop');
 const parser = new DOMParser();
 
 // HERE I DISPLAY THE PROJECTS CARD STRUCTURE FOR DESKTOP
-  
+
 projectCardStructureDesktop.forEach((projectString, index) => {
   const projectCardDesktop = parser.parseFromString(projectString, 'text/html').body.firstChild;
 
-  const desktopPopup=  `
+  const desktopPopup = `
     <section class="preview-project">
       <button class="project-x">
         <span class="project-bar one"></span>
@@ -163,10 +163,10 @@ projectCardStructureDesktop.forEach((projectString, index) => {
       </div>
     </section>
 
-    ` ;
+    `;
 
-  const previewPopup = parser.parseFromString(desktopPopup,'text/html').body.firstChild;
-  const portfolio = document.querySelector('#portfolio'); 
+  const previewPopup = parser.parseFromString(desktopPopup, 'text/html').body.firstChild;
+  const portfolio = document.querySelector('#portfolio');
   const previewx = previewPopup.querySelector('.project-x');
   const previewBtn = projectCardDesktop.querySelector('.preview-btn');
   const previewBtn2 = projectCardDesktop.querySelector('.preview-btn2');
@@ -191,8 +191,7 @@ projectCardStructureDesktop.forEach((projectString, index) => {
 // HERE I DISPLAY THE POP UP FOR MOBILE
 
 projectCardStructure.forEach((projectString, index) => {
-
-  const projectCard = parser.parseFromString(projectString, 'text/html').body.firstChild;  
+  const projectCard = parser.parseFromString(projectString, 'text/html').body.firstChild; 
   const Popup = `
   <section class="preview-project">
     <button class="project-x">
@@ -227,10 +226,10 @@ projectCardStructure.forEach((projectString, index) => {
     </div>
     </div>
   </section>  
-  ` 
+  `
 
-  const mobilePopup = parser.parseFromString(Popup , 'text/html').body.firstChild;
-  const portfolio =  document.querySelector('#portfolio'); 
+  const mobilePopup = parser.parseFromString(Popup, 'text/html').body.firstChild;
+  const portfolio = document.querySelector('#portfolio');
   const previewx = mobilePopup.querySelector('.project-x');
   const previewBtn = projectCard.querySelector('.preview-btn');
 
@@ -240,10 +239,9 @@ projectCardStructure.forEach((projectString, index) => {
 
   previewx.addEventListener('click', () => {
     mobilePopup.classList.toggle('is-active');
-  })
+  });
 
   portfolio.append(mobilePopup);
 
   gridProjectsMobile.append(projectCard);
-
-})
+});
