@@ -65,8 +65,8 @@ const projectsInformation = [
   },
 ];
 
-  // I will create the structure of each project card
-  
+// I will create the structure of each project card
+
 const projectCardStructure = projectsInformation.map((project) => `
   
   <div class='project-card card-${project.id} div-flex'>
@@ -119,20 +119,17 @@ const projectCardStructureDesktop = projectsInformation.map((project) => `
 
 `);
 
-
-  
 const gridProjectsMobile = document.querySelector('.projects-grid');
 const gridProjectsDesktop = document.querySelector('.projects-grid-desktop');
 const parser = new DOMParser();
-
 
 // HERE I DISPLAY THE PROJECTS CARD STRUCTURE FOR DESKTOP
   
 projectCardStructureDesktop.forEach((projectString, index) => {
 
-  const projectCardDesktop = parser.parseFromString(projectString, 'text/html').body.firstChild;  
-     
-  const desktopPopup = 
+  const projectCardDesktop = parser.parseFromString(projectString, 'text/html').body.firstChild;
+
+  const desktopPopup =
     `
     <section class="preview-project">
       <button class="project-x">
@@ -169,16 +166,16 @@ projectCardStructureDesktop.forEach((projectString, index) => {
     </section>
 
     ` 
-  
+
   const previewPopup = parser.parseFromString(desktopPopup , 'text/html').body.firstChild;
   const portfolio =  document.querySelector('#portfolio'); 
   const previewx = previewPopup.querySelector('.project-x');
   const previewBtn = projectCardDesktop.querySelector('.preview-btn');
   const previewBtn2 = projectCardDesktop.querySelector('.preview-btn2');
-    
+
   previewBtn.addEventListener('click', () => {
       previewPopup.classList.toggle('is-active');
-  });  
+  });
 
   previewBtn2.addEventListener('click', () => {
       previewPopup.classList.toggle('is-active');
@@ -186,13 +183,12 @@ projectCardStructureDesktop.forEach((projectString, index) => {
 
   previewx.addEventListener('click', () => {
       previewPopup.classList.toggle('is-active');
-  })
+  });
 
   portfolio.append(previewPopup);
 
   gridProjectsDesktop.append(projectCardDesktop);
  });
-
 
 // HERE I DISPLAY THE POP UP FOR MOBILE
 
@@ -206,41 +202,41 @@ projectCardStructure.forEach((projectString, index) => {
       <span class="project-bar one"></span>
       <span class="project-bar two"></span>
     </button>
-    
+
     <div class="preview-project-content">
-    
+
       <h1 class="preview-project-title">${projectsInformation[index].name}</h1>
-    
+
     <ul class="preview-tags tags project-content div-flex">
        ${projectsInformation[index].tags.map((tech) => `<li class="card-tags-ul-li div-flex">${tech}</li>`).join('')}
     </ul>
-    
+
     <div class="main-preview-project div-flex">
-    
+
         <img class="preview-project-img" src="${projectsInformation[index].image}" alt="preview-project">
-    
+
         <div class="preview-card-description div-flex">
-    
+
             <p class="mobile-preview-card-p">${projectsInformation[index].longDescription}</p>
-    
+
         <div class="preview-container-btns">
-    
+
             <a class="btn preview-project-btn preview-see-live" href="${projectsInformation[index].seeLive}" target="_blank" rel="noopener">See-live<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-    
+
             <a class="btn preview-project-btn preview-see-source" href="${projectsInformation[index].seeSource}" target="_blank" rel="no" target="_blank" rel="noopener">See-source <i class="fa-brands fa-github-alt"></i></a>
-    
+
         </div>
       </div>
     </div>
     </div>
   </section>  
   ` 
-  
+
   const mobilePopup = parser.parseFromString(Popup , 'text/html').body.firstChild;
   const portfolio =  document.querySelector('#portfolio'); 
   const previewx = mobilePopup.querySelector('.project-x');
   const previewBtn = projectCard.querySelector('.preview-btn');
-  
+
   previewBtn.addEventListener('click', () => {
       mobilePopup.classList.toggle('is-active');
   });
@@ -252,8 +248,5 @@ projectCardStructure.forEach((projectString, index) => {
   portfolio.append(mobilePopup);
 
   gridProjectsMobile.append(projectCard);
-   
+
 })
-
-// HERE I WILL DISPLAY THE POPUP FOR DAYLY SELECTION
-
