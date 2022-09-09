@@ -10,17 +10,15 @@ email.addEventListener('input', () => {
   if (isInvalid) {
     email.classList.add('invalid');
   } else {
-    email.classList.remove('invalid');
     error.textContent = '';
     error.className = 'error';
   }
 });
 
-form.addEventListener('submit', () => {
+form.addEventListener('submit', (event) => {
   event.preventDefault();
-
   const isInvalid = emailSearch.test(email.value);
-  if (isInvalid){
+  if (isInvalid) {
     email.classList.add('invalid');
     error.textContent = `Please, enter a lowercase email. Try with: '${email.value.toLowerCase()}'`;
     error.className = 'error active';
