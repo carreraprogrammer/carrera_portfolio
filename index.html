@@ -318,7 +318,8 @@
             in touch.</h2>
         <form class="contact-form div-flex" action="https://formspree.io/f/mzbwzeen" method="POST">
             <input type="text" class="form-name" name="full-name" placeholder="Full name" required maxlength="30">
-            <input type="email" class="form-email" name="email" placeholder="Email address" required>
+            <input type="email" id="email" class="form-email" name="email" placeholder="Email address" required>
+            <span class="error" aria-live="polite"></span>
             <textarea class="form-message" name="message" placeholder="Enter text here" required
                 maxlength="500"></textarea>
             <input type="submit" class="form-submit btn div-flex" value="Get in touch">
@@ -339,6 +340,7 @@
     </div>
 <script src="js/index_dom.js"></script>
 <script src="js/pop_up.js"></script>
+<script src="js/form-validation.js">s</script>
 </body>
 
 </html>
