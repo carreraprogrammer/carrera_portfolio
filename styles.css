@@ -53,6 +53,11 @@ body {
 * a {
   text-decoration: none;
   color: white;
+  cursor: pointer;
+}
+
+* i {
+  padding-left: 10px;
 }
 
 .div-flex {
@@ -276,6 +281,151 @@ header {
 
 /* Here starts daily selection section */
 
+/* Here start the project preview */
+
+.preview-project {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #1c1a19;
+  z-index: 1000;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+
+.preview-project.is-active {
+  transform: translateX(0);
+}
+
+.project-x {
+  z-index: 1001;
+  position: fixed;
+  top: 24vw;
+  right: 12.2vw;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.project-x:hover {
+  background-color: var(--red);
+}
+
+.project-bar {
+  display: inline-block;
+  background-color: var(--black);
+  width: 100%;
+  height: 2px;
+}
+
+.project-bar.two {
+  transform: translateY(-8px) rotate(45deg);
+}
+
+.project-bar.one {
+  transform: translateY(8px) rotate(-45deg);
+}
+
+.preview-project-content {
+  background-color: var(--white);
+  position: fixed;
+  top: 16vw;
+  bottom: 5vw;
+  right: 4.2vw;
+  left: 4.2vw;
+}
+
+.preview-project-title {
+  margin-top: 16px;
+  margin-left: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.tags.project-content {
+  margin-top: 30px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.main-preview-project {
+  height: 75.2%;
+  width: 100%;
+  align-items: center;
+  margin-top: 24px;
+  flex-direction: column;
+}
+
+.preview-project-img {
+  margin-left: 16px;
+  margin-right: 16px;
+  width: 84vw;
+  height: 59vw;
+  flex-basis: 40%;
+  border: 2px solid black;
+}
+
+.preview-card-description {
+  flex-basis: 43%;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.preview-card-p {
+  display: none;
+}
+
+.mobile-preview-card-p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  text-align: justify;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 24px;
+}
+
+.preview-container-btns {
+  margin-top: 5%;
+  width: 100%;
+}
+
+.preview-project-btn {
+  margin-left: 8%;
+  width: 134px;
+  height: 48px;
+  padding: 12px;
+  background: #f55800;
+  border: none;
+  color: var(--white);
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+/* Here ends the project preview */
+
 .works {
   padding-top: 120px;
   align-items: center;
@@ -398,6 +548,22 @@ main hr {
 
 /* Here starts project grid */
 
+.long-description {
+  display: none;
+}
+
+.project-img {
+  display: none;
+}
+
+.see-live-link {
+  display: none;
+}
+
+.see-source-link {
+  display: none;
+}
+
 .projects-grid {
   width: 327px;
   display: grid;
@@ -419,8 +585,33 @@ main hr {
   justify-content: flex-end;
 }
 
+.first-card {
+  display: none;
+}
+
 .card-one {
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(vectors/Img_Placeholder.png);
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(Projects/Project_1.png);
+}
+
+.card-two {
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(Projects/Project_2.png);
+}
+
+.card-three {
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(Projects/Project_3.jpg);
+}
+
+.card-four {
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(Projects/Project_4.jpg);
+}
+
+.card-five {
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(Projects/Project_5.png);
+  background-position-x: 70%;
+}
+
+.card-six {
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(Projects/Project_6.png);
 }
 
 .card-title {
@@ -938,6 +1129,145 @@ footer {
 
   /* Here starts daily selection section */
 
+  /* Here start the project preview */
+
+  .preview-project {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #1c1a19c0;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .preview-project.is-active {
+    transform: translateX(0);
+  }
+
+  .project-x {
+    z-index: 1001;
+    position: fixed;
+    top: 10.4vw;
+    right: 12.5vw;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .project-x:hover {
+    background-color: var(--red);
+  }
+
+  .project-bar {
+    display: inline-block;
+    background-color: var(--black);
+    width: 100%;
+    height: 2px;
+  }
+
+  .project-bar.two {
+    transform: translateY(-8px) rotate(45deg);
+  }
+
+  .project-bar.one {
+    transform: translateY(8px) rotate(-45deg);
+  }
+
+  .preview-project-content {
+    background-color: var(--white);
+    position: fixed;
+    top: 6.77vw;
+    bottom: 3vw;
+    right: 9.8vw;
+    left: 9.8vw;
+  }
+
+  .preview-project-title {
+    margin-top: 24px;
+    margin-left: 24px;
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+  }
+
+  .tags.project-content {
+    margin-top: 12px;
+    margin-left: 24px;
+  }
+
+  .main-preview-project {
+    height: 75.2%;
+    width: 100%;
+    align-items: center;
+    margin-top: 0;
+    flex-direction: row;
+  }
+
+  .preview-project-img {
+    margin-left: 24px;
+    width: 57%;
+    max-height: 90%;
+    flex-basis: 57%;
+  }
+
+  .preview-card-description {
+    flex-basis: 43%;
+    width: 43%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .mobile-preview-card-p {
+    display: none;
+  }
+
+  .preview-card-p {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    margin-left: 25px;
+    margin-right: 24px;
+  }
+
+  .preview-container-btns {
+    margin-top: 7%;
+  }
+
+  .preview-project-btn {
+    margin-left: 25px;
+    width: 134px;
+    height: 48px;
+    background: #f55800;
+    border: none;
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    cursor: pointer;
+  }
+
+  /* Here ends the project preview */
+
   .works {
     padding-top: 135px;
     align-items: center;
@@ -1075,38 +1405,39 @@ footer {
   }
 
   .card-one {
-    background: url(vectors/Img_desktop1.png);
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(Projects/Project_1.png);
     background-repeat: no-repeat;
     background-size: cover;
     border: 3px solid black;
   }
 
   .card-two {
-    background: url(vectors/Img_desktop2.png);
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(Projects/Project_2.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .card-three {
-    background: url(vectors/Img_desktop3.png);
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(Projects/Project_3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .card-four {
-    background: url(vectors/Img_desktop4.png);
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(Projects/Project_4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .card-five {
-    background: url(vectors/Img_desktop2.png);
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(Projects/Project_5.png);
+    background-position-x: 70%;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .card-six {
-    background: url(vectors/Img_desktop3.png);
+    background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%), url(Projects/Project_6.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1133,6 +1464,7 @@ footer {
     width: 23.4vw;
     margin-left: 1.1vw;
     margin-right: 1.1vw;
+    max-width: 90%;
   }
 
   .card-tags {

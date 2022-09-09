@@ -1,3 +1,5 @@
+// This is the DOM for burger menu //
+
 const hamburger = document.querySelector('.burger-menu');
 const navMenu = document.querySelector('.mobile-menu');
 
