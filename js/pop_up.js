@@ -1,5 +1,3 @@
-
-
 const projectsInformation = [
 
   {
@@ -11,7 +9,7 @@ const projectsInformation = [
     image: 'Projects/Project_1.png',
     seeLive: 'https://www.freecodecamp.org/certification/fccde5c…ac5b-4ee7-91c7-386adbe10dcd/responsive-web-design',
     seeSource: 'https://www.freecodecamp.org/certification/fccde5c1dbd-ac5b-4ee7-91c7-386adbe10dcd/responsive-web-design',
-    tags: ['html', 'Css']
+    tags: ['html', 'Css'],
   },
 
   {
@@ -35,8 +33,6 @@ const projectsInformation = [
     seeSource: 'https://github.com/carreraprogrammer/Moneta-ecommerce',
     tags: ['html', 'Bootstrap', 'Ruby'],
   },
-
-  
   {
     id: 'four',
     name: 'Project Four',
@@ -47,8 +43,6 @@ const projectsInformation = [
     seeSource: 'https://github.com/carreraprogrammer/Moneta-ecommerce',
     tags: ['html', 'Bootstrap', 'Ruby'],
   },
-  
-  
   {
     id: 'five',
     name: 'Project Five',
@@ -59,7 +53,6 @@ const projectsInformation = [
     seeSource: 'https://www.freecodecamp.org/certification/fccde5c1dbd-ac5b-4ee7-91c7-386adbe10dcd/responsive-web-design',
     tags: ['html', 'Bootstrap', 'Ruby'],
   },
-  
   {
     id: 'six',
     name: 'Project Six',
@@ -70,6 +63,7 @@ const projectsInformation = [
     seeSource: 'https://carreraprogrammer.github.io/carrera_portfolio/',
     tags: ['html', 'Bootstrap', 'Ruby'],
   },
+  
 ]
   
   // I will create the structure of each project card
