@@ -191,7 +191,7 @@ projectCardStructureDesktop.forEach((projectString, index) => {
 // HERE I DISPLAY THE POP UP FOR MOBILE
 
 projectCardStructure.forEach((projectString, index) => {
-  const projectCard = parser.parseFromString(projectString, 'text/html').body.firstChild; 
+  const projectCard = parser.parseFromString(projectString, 'text/html').body.firstChild;
   const Popup = `
   <section class="preview-project">
     <button class="project-x">
@@ -226,7 +226,7 @@ projectCardStructure.forEach((projectString, index) => {
     </div>
     </div>
   </section>  
-  `
+  `;
 
   const mobilePopup = parser.parseFromString(Popup, 'text/html').body.firstChild;
   const portfolio = document.querySelector('#portfolio');
