@@ -14,7 +14,6 @@ html {
 
 :root {
   --black: #1c1a19;
-  --wine: #730d15;
   --red: #ff6b00;
   --gray: gray;
   --gray2: #262626;
@@ -925,6 +924,35 @@ footer {
 
 .icons-container img {
   padding: 10px;
+}
+
+/* This is the display for invalid fields */
+
+input.invalid {
+  border-color: #900;
+  background-color: #fdd;
+}
+
+input:focus.invalid {
+  outline: none;
+}
+
+/* This is the style of our error messages */
+
+.error {
+  padding: 0;
+  font-size: 1rem;
+  color: var(--white);
+  color: #ff6b00;
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 12px;
+}
+
+.error.active {
+  padding: 0.3em;
 }
 
 /* This is from 768 px onwards */
