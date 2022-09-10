@@ -17,7 +17,6 @@ email.addEventListener('input', () => {
 });
 
 form.addEventListener('submit', (event) => {
-
   const isInvalid = emailSearch.test(email.value);
   if (isInvalid) {
     email.classList.add('invalid');
