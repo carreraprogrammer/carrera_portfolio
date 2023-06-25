@@ -577,7 +577,8 @@ main hr {
 }
 
 .project-card {
-  height: 386px;
+  height: 30%;
+  min-height: 386px;
   color: white;
   flex-direction: column;
   align-items: center;
@@ -1421,9 +1422,9 @@ input:focus.invalid {
   }
 
   .project-card {
-    height: 31.1vw;
+    height: 30%;
+    min-height: 31.1vw;
     margin-bottom: 24px;
-    align-items: baseline;
     transition: 0.5s all;
   }
 
@@ -1472,6 +1473,7 @@ input:focus.invalid {
 
   .card-link {
     color: #fff;
+    width: 100%;
   }
 
   .card-title {
@@ -1517,11 +1519,7 @@ input:focus.invalid {
   }
 
   .link-card-button {
-    margin-bottom: -0.3%;
-    height: 58px;
-    background-color: #f55800;
-    border: 3px solid #ff6b00;
-    width: 100%;
+    min-height: 50px;
   }
 
   .link-card-button:hover {
