@@ -400,6 +400,7 @@ header {
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 24px;
+  overflow-y: scroll;
 }
 
 .preview-container-btns {
@@ -1274,6 +1275,7 @@ input:focus.invalid {
     line-height: 30px;
     margin-left: 25px;
     margin-right: 24px;
+    overflow-y: scroll;
   }
 
   .preview-container-btns {
@@ -1415,7 +1417,7 @@ input:focus.invalid {
     gap: 1.6vw;
     grid-template-columns: 31.94% 31.94% 31.94%;
     margin-bottom: 120px;
-    margin-top: 1.6vw;
+    margin-top: 10%;
     max-width: 1445px;
     min-width: 1040px;
     min-height: 440px;
@@ -1423,8 +1425,7 @@ input:focus.invalid {
 
   .project-card {
     height: 30%;
-    min-height: 31.1vw;
-    margin-bottom: 24px;
+    min-height: 365px
     transition: 0.5s all;
   }
 
